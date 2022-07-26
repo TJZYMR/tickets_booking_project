@@ -37,6 +37,7 @@
 	11. Nosql Database=Mongodb
 	12. For deployment=>AWS ec2,s3,etc...
 	13. Payment Gateway Integration using Razorpay or Payu or stripe(Undecided)
+	14. Github actions for just get to know with CI/CD pipeline
 
 ------------
 
