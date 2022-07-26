@@ -1,4 +1,4 @@
-                                TECH-STACK
+                                    TECH-STACK
 
 1. Python
 2. Django and Django-rest-framework    
@@ -15,8 +15,20 @@
 13. Payment Gateway Integration using Razorpay or Payu or stripe(Undecided)
 
                             SYSTEM DESIGN
-:::image type="content" source="BOokmyshow_SYstemDesign.png" alt-text="d":::
+                        
+![alt text for screen readers](BOokmyshow_SYstemDesign.png "Text to show on mouseover")
+
+
                             APIS
+1. getCities/
+2. getTheatreByCity/
+3. getMovieByTheatre/
+4. getAuditoriumByMovie/
+5. getShowByAuditorium/
+6. bookseat/
+7. sendticketbyemial/
+8. postcommentsandreview/
+9. getAvailableSeatByShows/
 
 
 
@@ -24,7 +36,4 @@
 
 
 
-
-
-
-press alt+m shortcut
+####press alt+m shortcut
