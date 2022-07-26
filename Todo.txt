@@ -1,2 +1,4 @@
 
 Crud for Movie_Ticket_booking_project {due:2022-07-26}
+making wiki pages as maharshi said
+Postgres db fields brainstorm and then implement tables

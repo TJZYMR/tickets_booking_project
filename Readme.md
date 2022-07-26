@@ -44,7 +44,7 @@
 
 ### SYSTEM DESIGN:=>
                         
-![alt text for screen readers](BOokmyshow_SYstemDesign.png "Text to show on mouseover")
+![alt text for screen readers](Img.png "Text to show on mouseover")
 
 
 ------------
