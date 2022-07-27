@@ -1,0 +1,3 @@
+1.while booking the ticket,number of booked seats and number of avaliable seats should be sent as JSON.
+2.How to distinguish between multiple theatres' multiple tiers complexity.
+3.Different Theatres' can have different seats allocated to different tiers.
