@@ -43,13 +43,12 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "movie_tickets",
     "rest_framework",
     "debug_toolbar",
     "django_extensions",
     "drf_yasg",
+    "Movie_Service",
 ]
-
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",

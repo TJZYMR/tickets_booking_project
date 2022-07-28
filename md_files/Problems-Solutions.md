@@ -32,6 +32,6 @@
 2. **Adding env file to gitignore**
     =>.env in gitignore first and then these steps
         a. git rm -f .env
-        b. git add .
+        b. git add .  
         c. git commit -m "remove .env file from git"
         d. git push
