@@ -9,7 +9,7 @@ venv/
 # *.log
 .env
 # .vscode/
-
+images/
 # *.log
 # .env
 

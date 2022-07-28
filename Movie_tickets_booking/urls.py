@@ -35,7 +35,7 @@ urlpatterns = [
     path("__debug__/", include("debug_toolbar.urls")),
     # ---------------
     path("admin/", admin.site.urls),
-    path("movie_service/v1/", include("Movie_service_app.urls")),
+    path("movie_booking/v1/", include("Movie_booking_app.urls")),
 ]
 
 

@@ -32,8 +32,7 @@ ALLOWED_HOSTS = config(
     "ALLOWED_HOSTS", cast=lambda v: [s.strip() for s in v.split(",")]
 )
 
-
-# Application definition
+AUTH_USER_MODEL = "Movie_booking_app.User"
 
 INSTALLED_APPS = [
     "jazzmin",
@@ -47,7 +46,7 @@ INSTALLED_APPS = [
     "debug_toolbar",
     "django_extensions",
     "drf_yasg",
-    "Movie_service_app",
+    "Movie_booking_app",
 ]
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
