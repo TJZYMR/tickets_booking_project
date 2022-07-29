@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 from Movie_booking_app.models.statuses import AccountStatus
-
+from autoslug import AutoSlugField
 
 USER_CHOICES = (
     ("Customer", "CUSTOMER"),
@@ -20,6 +20,14 @@ class User(AbstractUser):
         on_delete=models.CASCADE,
         default=0,
         null=True,  # , editable=False
+    )
+    slug = AutoSlugField(
+        populate_from="username",
+        default="",
+        unique=True,
+        editable=True,
+        blank=True,
+        null=True,
     )
 
     def __str__(self):

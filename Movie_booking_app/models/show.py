@@ -1,3 +1,4 @@
+from autoslug import AutoSlugField
 from django.db import models
 from Movie_booking_app.models.cinema import Cinema
 from Movie_booking_app.models.cinemahall import CinemaHall
@@ -14,3 +15,11 @@ class Show(models.Model):
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE, null=True)
     cinema = models.ForeignKey(Cinema, on_delete=models.CASCADE, null=True)
     cinema_hall = models.OneToOneField(CinemaHall, on_delete=models.CASCADE, null=True)
+    slug = AutoSlugField(
+        populate_from="movie_name",
+        default="",
+        unique=True,
+        editable=True,
+        blank=True,
+        null=True,
+    )

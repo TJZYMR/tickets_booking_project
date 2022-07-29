@@ -1,3 +1,4 @@
+from autoslug import AutoSlugField
 from django.db import models
 from Movie_booking_app.models.cinemahall import CinemaHall
 from Movie_booking_app.models.movie import Movie
@@ -7,6 +8,14 @@ from Movie_booking_app.models.util import Timestamp
 
 class SeatType(models.Model):  # regular, premium, vip, vip_premium
     seat_type = models.CharField(max_length=100)
+    slug = AutoSlugField(
+        populate_from="seat_type",
+        default="",
+        unique=True,
+        editable=True,
+        blank=True,
+        null=True,
+    )
 
     def __str__(self):
         return self.booking_status
@@ -28,6 +37,14 @@ class Cinema(Timestamp):
     website = models.CharField(max_length=100)
     cinema_hall = models.ForeignKey(CinemaHall, on_delete=models.CASCADE, null=True)
     movie = models.ManyToManyField(Movie, blank=True, null=True)
+    slug = AutoSlugField(
+        populate_from="name",
+        default="",
+        unique=True,
+        editable=True,
+        blank=True,
+        null=True,
+    )
 
     def __str__(self):
         return self.name

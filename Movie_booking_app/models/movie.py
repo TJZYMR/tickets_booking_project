@@ -1,3 +1,4 @@
+from autoslug import AutoSlugField
 from django.db import models
 
 from Movie_booking_app.models.util import Timestamp
@@ -13,6 +14,14 @@ class Movie(Timestamp):
     rating = models.IntegerField()
     language = models.CharField(max_length=255)
     country = models.CharField(max_length=255)
+    slug = AutoSlugField(
+        populate_from="title",
+        default="",
+        unique=True,
+        editable=True,
+        blank=True,
+        null=True,
+    )
 
     def __str__(self):
         return self.title

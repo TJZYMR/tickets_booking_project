@@ -1,3 +1,4 @@
+from autoslug import AutoSlugField
 from django.db import models
 from Movie_booking_app.models.movie import Movie
 from Movie_booking_app.models.util import Timestamp
@@ -9,6 +10,14 @@ class CinemaHall(Timestamp):
     name = models.CharField(max_length=100)
     movie = models.OneToOneField(Movie, on_delete=models.CASCADE, null=True)
     total_seats = models.IntegerField()
+    slug = AutoSlugField(
+        populate_from="name",
+        default="",
+        unique=True,
+        editable=True,
+        blank=True,
+        null=True,
+    )
 
     def __str__(self):
         return self.name
