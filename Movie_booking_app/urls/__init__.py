@@ -1,1 +1,1 @@
-from Movie_booking_app.urls.home import *
+# from Movie_booking_app.urls.
