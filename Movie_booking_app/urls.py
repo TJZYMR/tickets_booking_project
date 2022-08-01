@@ -30,6 +30,9 @@ from rest_framework_simplejwt.views import (
 
 urlpatterns = [
     path("registration/", UserViewSet.as_view({"post": "create"}), name="registration"),
+    path(
+        "profile/<str:slug>/", UserViewSet.as_view({"get": "retrieve"}), name="profile"
+    ),
     path("login/token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     path("login/token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
     path("token/verify/", TokenVerifyView.as_view(), name="token_verify"),
@@ -37,6 +40,7 @@ urlpatterns = [
     re_path(r"^auth/", include("djoser.urls.jwt")),
 ]
 
+# authentication urls
 # /users/
 # /users/me/
 # /users/confirm/

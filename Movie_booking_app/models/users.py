@@ -1,8 +1,9 @@
+from enum import unique
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 from Movie_booking_app.models.statuses import AccountStatus
-from autoslug import AutoSlugField
+from django_extensions.db.fields import AutoSlugField
 
 USER_CHOICES = (
     ("Customer", "CUSTOMER"),
@@ -22,13 +23,11 @@ class User(AbstractUser):
         null=True,  # , editable=False
     )
     slug = AutoSlugField(
-        populate_from="username",
-        default="",
-        unique=True,
-        editable=True,
-        blank=True,
-        null=True,
+        populate_from=["first_name", "last_name"], unique=True, editable=True
     )
+
+    def slugify_function(self, content):
+        return content.replace("_", "-").lower()
 
     def __str__(self):
         return self.username

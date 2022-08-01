@@ -120,21 +120,31 @@ class UserViewSet(viewsets.ViewSet):
 
         logger.info(
             "'User created successfully for user "
-            + str(request.data["firstname"])
+            + str(request.data["first_name"])
             + "-"
-            + str(request.data["lastname"])
+            + str(request.data["last_name"])
             + "'"
         )
         return Response(
             # serializer.data,#bcs we don't want to send all data in the response to the client back,so commented this out.
             {
                 "message": "User created successfully for user "
-                + str(request.data["firstname"])
+                + str(request.data["first_name"])
                 + "-"
-                + str(request.data["lastname"])
+                + str(request.data["last_name"])
             },
             status=status.HTTP_201_CREATED,
         )
+
+    def retrieve(self, request, slug):
+        try:
+            user = User.objects.get(slug=slug)
+            serializer = UserSerializer(user)
+            return Response(serializer.data)
+        except User.DoesNotExist:
+            return Response(
+                {"message": "User does not exist"}, status=status.HTTP_404_NOT_FOUND
+            )
 
 
 # class PaymentModeViewSet(viewsets.ModelViewSet):
