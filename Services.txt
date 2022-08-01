@@ -1,0 +1,25 @@
+1)User should be able to login(JWT + Cookie)(Access and Refresh Tokens)
+2)User should be able to logout
+3)User should be able to Register
+4)User should be able to Delete/Deactivate his/her account
+5)User should be able to login using Social Authentication(Only Google for the sake of simplicity here in this project)
+
+6)User should be able to Search for a movie based on some fields
+    [Response for url 1]
+    [Response for url 2]
+    [Response for url 3]
+    [Response for url 4]
+    [Response for url 5]
+    [Response for url 6]
+    [Response for url 7]
+    [Response for url 8]
+    [Response for url 9]
+    [Response for url 10]
+
+7)User should be able to Book for a movie
+    [Response]=>Response should include 1)the nearby cinemahalls that have the searched movie(list of all nearby cinemas),
+                                        2)In the selected cinema,list of all cinemahalls with the timings of the show which will be list of shows(list of shows with timings)
+
+8)User should be able to get the notification of the status of the Booking of the seats.
+
+9)User should be able to change the password of the account.

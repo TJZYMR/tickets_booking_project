@@ -47,6 +47,9 @@ INSTALLED_APPS = [
     "django_extensions",
     "drf_yasg",
     "Movie_booking_app",
+    "djoser",
+    # "rest_framework.authtoken",
+    "rest_framework_simplejwt",
 ]
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -152,3 +155,42 @@ sentry_sdk.init(
     # django.contrib.auth) you may enable sending PII data.
     send_default_pii=True,
 )
+
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "verbose": {
+            "format": "{levelname} {asctime} {module} {process:d} {thread:d} {message}",
+            "style": "{",
+        },
+        "simple": {
+            "format": "{levelname} {message}",
+            "style": "{",
+        },
+    },
+    "handlers": {
+        "file": {
+            "level": "DEBUG",
+            "class": "logging.FileHandler",
+            "filename": "./Logs.log",
+            "formatter": "verbose",
+        },
+    },
+    "loggers": {
+        "Movie_booking_app": {
+            "handlers": ["file"],
+            "level": "DEBUG",
+            "propagate": True,
+        }
+    },
+}
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ),
+}
+SIMPLE_JWT = {
+    "AUTH_HEADER_TYPES": ("JWT",),
+}
