@@ -53,7 +53,15 @@ class CinemaHallSeatSerializer(serializers.ModelSerializer):
 class MovieSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movie
-        fields = "__all__"
+        fields = [
+            "title",
+            "description",
+            "year",
+            "genre",
+            "rating",
+            "language",
+            "country",
+        ]
 
 
 class ShowSerializer(serializers.ModelSerializer):
@@ -84,6 +92,12 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = "__all__"
+
+
+class UserProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ["username", "email", "first_name", "last_name"]
 
 
 class PaymentModeSerializer(serializers.ModelSerializer):

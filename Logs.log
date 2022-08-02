@@ -34,3 +34,7 @@ INFO 2022-08-01 18:36:25,097 views 3000 12716 'User created successfully for use
 INFO 2022-08-01 18:36:49,179 views 11548 16152 'User created successfully for user darsh-shah'
 INFO 2022-08-01 18:40:42,222 views 8980 11512 'User created successfully for user darsh-shah'
 INFO 2022-08-01 18:44:29,852 views 11780 6920 'User created successfully for user tatva-joshi'
+DEBUG 2022-08-02 11:26:06,543 views 4520 9904 filtering queryset on the basis of the query param is being fetched
+DEBUG 2022-08-02 11:27:28,827 views 9040 4828 filtering queryset on the basis of the query param is being fetched
+DEBUG 2022-08-02 11:27:53,370 views 9040 4828 filtering queryset on the basis of the query param is being fetched
+DEBUG 2022-08-02 11:28:12,100 views 9040 4828 filtering queryset on the basis of the query param is being fetched

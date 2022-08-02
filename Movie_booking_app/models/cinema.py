@@ -1,24 +1,18 @@
-from autoslug import AutoSlugField
+from django_extensions.db.fields import AutoSlugField
 from django.db import models
-from Movie_booking_app.models.cinemahall import CinemaHall
-from Movie_booking_app.models.movie import Movie
 
 from Movie_booking_app.models.util import Timestamp
 
 
 class SeatType(models.Model):  # regular, premium, vip, vip_premium
     seat_type = models.CharField(max_length=100)
-    slug = AutoSlugField(
-        populate_from="seat_type",
-        default="",
-        unique=True,
-        editable=True,
-        blank=True,
-        null=True,
-    )
+    slug = AutoSlugField(populate_from=["seat_type"], unique=True, editable=True)
+
+    def slugify_function(self, content):
+        return content.replace(" ", "-").lower()
 
     def __str__(self):
-        return self.booking_status
+        return self.seat_type
 
     class Meta:
         verbose_name_plural = "Seat-Type"
@@ -35,16 +29,18 @@ class Cinema(Timestamp):
     phone = models.CharField(max_length=100)
     email = models.CharField(max_length=100)
     website = models.CharField(max_length=100)
-    cinema_hall = models.ForeignKey(CinemaHall, on_delete=models.CASCADE, null=True)
-    movie = models.ManyToManyField(Movie, blank=True, null=True)
-    slug = AutoSlugField(
-        populate_from="name",
-        default="",
-        unique=True,
-        editable=True,
-        blank=True,
-        null=True,
-    )
+    # show = models.ForeignKey(Show, on_delete=models.CASCADE, null=True)
+    slug = AutoSlugField(populate_from=["name"], unique=True, editable=True)
+    # cinema_hall
+    def slugify_function(self, content):
+        return content.replace(" ", "-").lower()
 
     def __str__(self):
         return self.name
+
+    # class Meta:
+    #     constraints = [
+    #         models.UniqueConstraint(
+    #             fields=["show", "name"], name="unique show and name"
+    #         )
+    #     ]

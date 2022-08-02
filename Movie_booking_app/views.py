@@ -1,5 +1,4 @@
 import email
-from turtle import st
 from rest_framework.response import Response
 from rest_framework import viewsets
 from Movie_booking_app.models import (
@@ -37,7 +36,10 @@ from Movie_booking_app.serializers import (
     CoupenSerializer,
     NotificationSerializer,
     NotificationTypeSerializer,
+    UserProfileSerializer,
 )
+from rest_framework import generics
+from django_filters import rest_framework as filters
 from rest_framework import status
 import logging
 
@@ -67,9 +69,26 @@ logger = logging.getLogger(__name__)
 #     serializer_class = CinemaHallSeatSerializer
 
 
-# class MovieViewSet(viewsets.ModelViewSet):
-#     queryset = Movie.objects.all()
-#     serializer_class = MovieSerializer
+class MovieViewSet(viewsets.ModelViewSet):
+    queryset = Movie.objects.all()
+    serializer_class = MovieSerializer
+    filter_backends = (filters.DjangoFilterBackend,)
+    filterset_fields = (
+        "slug",
+        "year",
+        "genre",
+        "rating",
+        "language",
+    )
+
+    def list(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+        logger.debug(
+            "filtering queryset on the basis of the query param is being fetched"
+        )
+        serializer = self.get_serializer(queryset, many=True)
+        print("reached here")
+        return Response(serializer.data)
 
 
 # class ShowViewSet(viewsets.ModelViewSet):
@@ -93,9 +112,8 @@ logger = logging.getLogger(__name__)
 
 
 class UserViewSet(viewsets.ViewSet):
-    """User Registration API"""
-
     def create(self, request):
+        """User Registration API"""
         serializer = UserSerializer(data=request.data)
         if User.objects.filter(
             username=request.data["username"],
@@ -137,9 +155,10 @@ class UserViewSet(viewsets.ViewSet):
         )
 
     def retrieve(self, request, slug):
+        """User Profile GET request API"""
         try:
             user = User.objects.get(slug=slug)
-            serializer = UserSerializer(user)
+            serializer = UserProfileSerializer(user)
             return Response(serializer.data)
         except User.DoesNotExist:
             return Response(

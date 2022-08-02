@@ -38,6 +38,7 @@ urlpatterns = [
     path("token/verify/", TokenVerifyView.as_view(), name="token_verify"),
     re_path(r"^auth/", include("djoser.urls")),
     re_path(r"^auth/", include("djoser.urls.jwt")),
+    path("movie/", MovieViewSet.as_view({"get": "list"}), name="movie"),
 ]
 
 # authentication urls

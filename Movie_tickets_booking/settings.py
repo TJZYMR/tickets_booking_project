@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     "djoser",
     # "rest_framework.authtoken",
     "rest_framework_simplejwt",
+    "guardian",
+    "django_filters",
 ]
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -190,7 +192,12 @@ REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ),
+    "DEFAULT_FILTER_BACKENDS": ("django_filters.rest_framework.DjangoFilterBackend",),
 }
 SIMPLE_JWT = {
     "AUTH_HEADER_TYPES": ("JWT",),
 }
+AUTHENTICATION_BACKENDS = (
+    "django.contrib.auth.backends.ModelBackend",  # this is default
+    "guardian.backends.ObjectPermissionBackend",
+)
