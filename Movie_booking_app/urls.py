@@ -39,6 +39,11 @@ urlpatterns = [
     re_path(r"^auth/", include("djoser.urls")),
     re_path(r"^auth/", include("djoser.urls.jwt")),
     path("movie/", MovieViewSet.as_view({"get": "list"}), name="movie"),
+    path(
+        "cinema/search/<str:slug>/",
+        CinemaViewSet.as_view({"get": "retrieve"}),
+        name="cinema",
+    ),
 ]
 
 # authentication urls

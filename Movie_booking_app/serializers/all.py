@@ -32,12 +32,6 @@ class SeatTypeSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-class CinemaSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Cinema
-        fields = "__all__"
-
-
 class CinemaHallSerializer(serializers.ModelSerializer):
     class Meta:
         model = CinemaHall
@@ -64,10 +58,17 @@ class MovieSerializer(serializers.ModelSerializer):
         ]
 
 
+class CinemaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Cinema
+        fields = "__all__"
+
+
 class ShowSerializer(serializers.ModelSerializer):
     class Meta:
         model = Show
         fields = "__all__"
+        depth = 1
 
 
 class PaymentStatusSerializer(serializers.ModelSerializer):

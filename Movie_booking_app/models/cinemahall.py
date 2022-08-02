@@ -18,3 +18,11 @@ class CinemaHall(Timestamp):
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=["name", "cinema"],
+                name="unique cinemahallname",
+            )
+        ]

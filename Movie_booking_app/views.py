@@ -1,6 +1,7 @@
 import email
 from rest_framework.response import Response
 from rest_framework import viewsets
+from Movie_booking_app import serializers
 from Movie_booking_app.models import (
     Booking,  #
     SeatType,  #
@@ -17,7 +18,8 @@ from Movie_booking_app.models import (
     Payment,  #
     Coupen,  #
     Notification,  #
-    NotificationType,  #
+    NotificationType,
+    cinema,  #
 )
 from Movie_booking_app.serializers import (
     BookingSerializer,
@@ -53,10 +55,22 @@ logger = logging.getLogger(__name__)
 #     queryset = SeatType.objects.all()
 #     serializer_class = SeatTypeSerializer
 
+from django.db.models import Prefetch
 
-# class CinemaViewSet(viewsets.ModelViewSet):
-#     queryset = Cinema.objects.all()
-#     serializer_class = CinemaSerializer
+# from django.db.models import Prefetch
+
+
+class CinemaViewSet(viewsets.ModelViewSet):
+    def retrieve(self, request, slug):
+        try:
+            # cinema = Show.objects.filter(cinema__slug=slug)
+            # serializer = ShowSerializer(cinema, many=True)
+            # cinema = Show.objects.prefetch_related("cinema").all()
+            queryset = Show.objects.all().prefetch_related(Prefetch("cinema"))
+            serializer = ShowSerializer(queryset, many=True)
+            return Response(serializer.data)
+        except Cinema.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
 
 
 # class CinemaHallViewSet(viewsets.ModelViewSet):
@@ -69,7 +83,7 @@ logger = logging.getLogger(__name__)
 #     serializer_class = CinemaHallSeatSerializer
 
 
-class MovieViewSet(viewsets.ModelViewSet):
+class MovieViewSet(viewsets.ViewSet):
     queryset = Movie.objects.all()
     serializer_class = MovieSerializer
     filter_backends = (filters.DjangoFilterBackend,)
@@ -87,7 +101,6 @@ class MovieViewSet(viewsets.ModelViewSet):
             "filtering queryset on the basis of the query param is being fetched"
         )
         serializer = self.get_serializer(queryset, many=True)
-        print("reached here")
         return Response(serializer.data)
 
 

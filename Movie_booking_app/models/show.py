@@ -18,7 +18,9 @@ class Show(models.Model):
     end_time = models.TimeField()
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE, null=True)
     cinema = models.ForeignKey(Cinema, on_delete=models.CASCADE, null=True)
-    cinema_hall = models.ForeignKey(CinemaHall, on_delete=models.CASCADE, null=True)
+    cinema_hall = models.ForeignKey(
+        CinemaHall, on_delete=models.CASCADE, null=True  # , related_name="shows_hall"
+    )
     slug = AutoSlugField(
         populate_from=["movie__slug"], unique=True, editable=True, default=""
     )
@@ -53,6 +55,7 @@ class Show(models.Model):
                     "end_time",
                     "movie",
                     "cinema_hall",
+                    "cinema",
                 ],
                 name="unique show",
             )
