@@ -63,10 +63,7 @@ from django.db.models import Prefetch
 class CinemaViewSet(viewsets.ModelViewSet):
     def retrieve(self, request, slug):
         try:
-            # cinema = Show.objects.filter(cinema__slug=slug)
-            # serializer = ShowSerializer(cinema, many=True)
-            # cinema = Show.objects.prefetch_related("cinema").all()
-            queryset = Show.objects.all().prefetch_related(Prefetch("cinema"))
+            queryset = Show.objects.all().filter(cinema__slug=slug)
             serializer = ShowSerializer(queryset, many=True)
             return Response(serializer.data)
         except Cinema.DoesNotExist:

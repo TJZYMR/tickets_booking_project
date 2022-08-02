@@ -21,6 +21,7 @@ class Show(models.Model):
     cinema_hall = models.ForeignKey(
         CinemaHall, on_delete=models.CASCADE, null=True  # , related_name="shows_hall"
     )
+    price = models.IntegerField(default=0)
     slug = AutoSlugField(
         populate_from=["movie__slug"], unique=True, editable=True, default=""
     )

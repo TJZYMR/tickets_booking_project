@@ -32,10 +32,22 @@ class SeatTypeSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
+class CinemaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Cinema
+        fields = ["name", "state", "city", "country", "phone", "email"]
+
+
 class CinemaHallSerializer(serializers.ModelSerializer):
+    cinema = CinemaSerializer(many=False, read_only=True)
+
     class Meta:
         model = CinemaHall
-        fields = "__all__"
+        fields = [
+            "name",
+            "total_seats",
+            "cinema",
+        ]
 
 
 class CinemaHallSeatSerializer(serializers.ModelSerializer):
@@ -58,17 +70,21 @@ class MovieSerializer(serializers.ModelSerializer):
         ]
 
 
-class CinemaSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Cinema
-        fields = "__all__"
-
-
 class ShowSerializer(serializers.ModelSerializer):
+    movie = MovieSerializer()
+    cinema = CinemaSerializer()
+    cinema_hall = CinemaHallSerializer()
+
     class Meta:
         model = Show
-        fields = "__all__"
-        depth = 1
+        fields = [
+            "start_time",
+            "end_time",
+            "date",
+            "movie",
+            "cinema",
+            "cinema_hall",
+        ]
 
 
 class PaymentStatusSerializer(serializers.ModelSerializer):
