@@ -1,0 +1,2 @@
+1)celery start worker=celery -A Movie_tickets_booking worker --loglevel=info -P eventlet
+2)in celery there are two things when calling function that is first is delay to call the task and second is appply_Async to provide args to task with time delay.

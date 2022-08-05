@@ -1,6 +1,13 @@
 from django.db import models
 
 
+class SeatState(models.Model):
+    seat_state = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.seat_state
+
+
 class PaymentStatus(
     models.Model
 ):  # create unpaid,pending,completed,failed,declined,cencelled,abandoned,settling,settled,refunded

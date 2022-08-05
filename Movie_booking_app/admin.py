@@ -18,12 +18,14 @@ from .models import (
     Coupen,
     Notification,
     NotificationType,
+    SeatState,
 )
 
 # Register your models here.
 admin.site.register(
     [
         Booking,
+        SeatState,
         SeatType,
         Cinema,
         CinemaHall,

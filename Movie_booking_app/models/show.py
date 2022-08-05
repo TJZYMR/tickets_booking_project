@@ -1,4 +1,5 @@
-from this import s
+# from this import s
+from zoneinfo import available_timezones
 from django_extensions.db.fields import AutoSlugField
 from django.db import models
 from Movie_booking_app.models.cinema import Cinema
@@ -21,7 +22,10 @@ class Show(models.Model):
     cinema_hall = models.ForeignKey(
         CinemaHall, on_delete=models.CASCADE, null=True  # , related_name="shows_hall"
     )
-    price = models.IntegerField(default=0)
+    total_seats = models.IntegerField(default=50, null=True)
+    available_seats = models.IntegerField(default=50, null=True)
+    # price = models.IntegerField(default=0)
+    # cinemahallseat = models.ForeignKey(CinemaHall, on_delete=models.CASCADE, null=True)
     slug = AutoSlugField(
         populate_from=["movie__slug"], unique=True, editable=True, default=""
     )

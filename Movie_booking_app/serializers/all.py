@@ -39,15 +39,15 @@ class CinemaSerializer(serializers.ModelSerializer):
 
 
 class CinemaHallSerializer(serializers.ModelSerializer):
-    cinema = CinemaSerializer(many=False, read_only=True)
+    # for selecting only one field from the other serializers
+
+    cinemaname = serializers.SlugRelatedField(
+        source="cinema", slug_field="name", read_only=True
+    )
 
     class Meta:
         model = CinemaHall
-        fields = [
-            "name",
-            "total_seats",
-            "cinema",
-        ]
+        fields = ["name", "total_seats", "cinemaname", "available_seats"]
 
 
 class CinemaHallSeatSerializer(serializers.ModelSerializer):
@@ -84,6 +84,17 @@ class ShowSerializer(serializers.ModelSerializer):
             "movie",
             "cinema",
             "cinema_hall",
+        ]
+
+
+class ShowMovieSerializer(serializers.ModelSerializer):
+    cinema = CinemaSerializer()
+
+    class Meta:
+        model = Show
+        fields = [
+            "start_time",
+            "cinema",
         ]
 
 

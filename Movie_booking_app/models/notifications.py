@@ -1,4 +1,4 @@
-from re import M
+# from re import M
 from django.db import models
 from Movie_booking_app.models.movie import Movie
 

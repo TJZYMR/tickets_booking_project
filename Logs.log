@@ -38,3 +38,223 @@ DEBUG 2022-08-02 11:26:06,543 views 4520 9904 filtering queryset on the basis of
 DEBUG 2022-08-02 11:27:28,827 views 9040 4828 filtering queryset on the basis of the query param is being fetched
 DEBUG 2022-08-02 11:27:53,370 views 9040 4828 filtering queryset on the basis of the query param is being fetched
 DEBUG 2022-08-02 11:28:12,100 views 9040 4828 filtering queryset on the basis of the query param is being fetched
+DEBUG 2022-08-03 10:57:54,070 views 8200 6496 Cinema exist
+INFO 2022-08-03 10:58:17,704 views 12188 8556 'Cinema exist'
+INFO 2022-08-03 11:06:04,261 views 6872 3976 'Cinema exist'
+ERROR 2022-08-03 11:06:26,178 views 7476 2660 Cinema does not exist
+ERROR 2022-08-03 11:08:29,076 views 10344 17376 'Cinema does not exist'
+INFO 2022-08-03 11:11:10,667 views 14084 15216 'Cinema exist'
+ERROR 2022-08-03 11:27:32,026 views 11888 5040 'Cannot resolve keyword 'cinema' into field. Choices are: booking, cinemahall_cinemas, city, country, created_at, email, id, name, phone, show, slug, state, updated_at, website'
+ERROR 2022-08-03 11:28:28,674 views 7268 10960 'Cannot resolve keyword 'cinema' into field. Choices are: booking, cinemahall_cinemas, city, country, created_at, email, id, name, phone, show, slug, state, updated_at, website'
+ERROR 2022-08-03 11:29:05,211 views 11792 10788 'Cannot resolve keyword 'cinema' into field. Choices are: booking, cinemahall_cinemas, city, country, created_at, email, id, name, phone, show, slug, state, updated_at, website'
+INFO 2022-08-03 11:30:25,846 views 6840 15868 'Cinema exist'
+INFO 2022-08-03 11:31:24,857 views 12188 5308 'Cinema exist'
+INFO 2022-08-03 11:35:29,826 views 8572 16852 'Cinema exist'
+ERROR 2022-08-03 11:56:27,003 views 11236 14316 'Cannot resolve keyword 'location' into field. Choices are: booking, cinemahall_cinemas, city, country, created_at, email, id, name, phone, show, slug, state, updated_at, website'
+ERROR 2022-08-03 11:56:56,674 views 16344 7116 'Cannot resolve keyword 'cinema' into field. Choices are: booking, cinemahall_cinemas, city, country, created_at, email, id, name, phone, show, slug, state, updated_at, website'
+ERROR 2022-08-03 11:56:57,930 views 16344 7116 'Cannot resolve keyword 'cinema' into field. Choices are: booking, cinemahall_cinemas, city, country, created_at, email, id, name, phone, show, slug, state, updated_at, website'
+ERROR 2022-08-03 11:58:09,117 views 16344 7116 'Cannot resolve keyword 'cinema' into field. Choices are: booking, cinemahall_cinemas, city, country, created_at, email, id, name, phone, show, slug, state, updated_at, website'
+ERROR 2022-08-03 11:59:28,836 views 9100 7308 'Cannot resolve keyword 'movie' into field. Choices are: booking, cinemahall_cinemas, city, country, created_at, email, id, name, phone, show, slug, state, updated_at, website'
+ERROR 2022-08-03 11:59:28,839 views 9100 6200 'Cannot resolve keyword 'movie' into field. Choices are: booking, cinemahall_cinemas, city, country, created_at, email, id, name, phone, show, slug, state, updated_at, website'
+ERROR 2022-08-03 12:00:07,502 views 9100 6200 'Cannot resolve keyword 'movie' into field. Choices are: booking, cinemahall_cinemas, city, country, created_at, email, id, name, phone, show, slug, state, updated_at, website'
+INFO 2022-08-03 12:00:58,835 views 9100 6200 'Cinema exist'
+ERROR 2022-08-03 12:01:36,717 views 9100 6200 'Cannot resolve keyword 'movie' into field. Choices are: booking, cinemahall_cinemas, city, country, created_at, email, id, name, phone, show, slug, state, updated_at, website'
+ERROR 2022-08-03 12:03:55,096 views 13020 312 'Cannot resolve keyword 'movie' into field. Choices are: booking, cinemahall_cinemas, city, country, created_at, email, id, name, phone, show, slug, state, updated_at, website'
+ERROR 2022-08-03 12:04:30,493 views 13020 312 'Cannot resolve keyword 'movie' into field. Choices are: booking, cinemahall_cinemas, city, country, created_at, email, id, name, phone, show, slug, state, updated_at, website'
+ERROR 2022-08-03 12:07:11,418 views 14948 17368 'Cannot resolve keyword 'movie' into field. Choices are: booking, cinemahall_cinemas, city, country, created_at, email, id, name, phone, show, slug, state, updated_at, website'
+INFO 2022-08-03 12:14:09,060 views 16836 10760 'Movie exist'
+ERROR 2022-08-03 12:15:02,452 views 12552 10300 'Got AttributeError when attempting to get a value for field `name` on serializer `CinemaSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Show` instance.
+Original exception text was: 'Show' object has no attribute 'name'.'
+INFO 2022-08-03 12:16:49,391 views 4572 13164 'Movie exist'
+ERROR 2022-08-03 12:18:09,932 views 7496 17240 'Movie does not exist'
+INFO 2022-08-03 12:18:14,185 views 7496 17240 'Movie exist'
+INFO 2022-08-03 12:21:50,778 views 5040 14704 'Movie exist'
+INFO 2022-08-03 12:22:40,898 views 6240 7408 'Movie exist'
+INFO 2022-08-03 12:23:09,383 views 3448 12456 'Movie exist'
+ERROR 2022-08-03 12:23:56,992 views 3148 8220 'Got AttributeError when attempting to get a value for field `show_start_time` on serializer `ShowMovieSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Show` instance.
+Original exception text was: 'Show' object has no attribute 'show_start_time'.'
+INFO 2022-08-03 12:25:55,617 views 16644 13516 'Movie exist'
+INFO 2022-08-03 12:27:07,412 views 9200 14872 'Movie exist'
+INFO 2022-08-03 12:27:29,029 views 6244 7040 'Movie exist'
+INFO 2022-08-03 12:27:41,697 views 12392 12544 'Movie exist'
+INFO 2022-08-03 12:28:33,736 views 12392 12544 'Movie exist'
+INFO 2022-08-03 12:29:56,348 views 11212 17072 'Movie exist'
+INFO 2022-08-03 12:31:18,009 views 3448 13896 'Movie exist'
+ERROR 2022-08-03 12:34:05,922 views 11880 2836 'Got AttributeError when attempting to get a value for field `show` on serializer `ShowMovieSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Show` instance.
+Original exception text was: 'Show' object has no attribute 'show'.'
+ERROR 2022-08-03 12:34:39,528 views 8424 3340 'Got AttributeError when attempting to get a value for field `show` on serializer `ShowMovieSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Show` instance.
+Original exception text was: 'Show' object has no attribute 'show'.'
+ERROR 2022-08-03 12:34:41,011 views 8424 3340 'Got AttributeError when attempting to get a value for field `show` on serializer `ShowMovieSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Show` instance.
+Original exception text was: 'Show' object has no attribute 'show'.'
+ERROR 2022-08-03 12:37:00,035 views 14528 13208 'Got AttributeError when attempting to get a value for field `name` on serializer `CinemaSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Show` instance.
+Original exception text was: 'Show' object has no attribute 'name'.'
+INFO 2022-08-03 12:37:39,298 views 5768 5296 'Movie exist'
+ERROR 2022-08-03 12:38:36,317 views 4176 10584 'Got AttributeError when attempting to get a value for field `shows` on serializer `ShowMovieSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Show` instance.
+Original exception text was: 'Show' object has no attribute 'shows'.'
+INFO 2022-08-03 12:39:01,254 views 14696 16252 'Movie exist'
+ERROR 2022-08-03 12:41:03,468 views 3600 11412 'Got AttributeError when attempting to get a value for field `show` on serializer `ShowMovieSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Show` instance.
+Original exception text was: 'Show' object has no attribute 'show'.'
+ERROR 2022-08-03 12:41:46,628 views 3680 4560 'Got AttributeError when attempting to get a value for field `show` on serializer `ShowMovieSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Show` instance.
+Original exception text was: 'Show' object has no attribute 'show'.'
+INFO 2022-08-03 12:42:01,022 views 6204 2504 'Movie exist'
+INFO 2022-08-03 12:42:49,119 views 5772 7264 'Movie exist'
+INFO 2022-08-03 12:42:51,502 views 5772 7264 'Movie exist'
+INFO 2022-08-03 12:43:40,386 views 2908 6284 'Movie exist'
+ERROR 2022-08-03 12:45:07,222 views 12000 11688 ''tuple' object has no attribute '_meta''
+INFO 2022-08-03 12:46:06,985 views 12948 3904 'Movie exist'
+INFO 2022-08-03 12:46:19,156 views 15508 5404 'Movie exist'
+ERROR 2022-08-03 12:47:33,077 views 11396 5548 'The field 'cinema_hall' was declared on serializer ShowMovieSerializer, but has not been included in the 'fields' option.'
+INFO 2022-08-03 12:47:49,032 views 17204 16128 'Movie exist'
+INFO 2022-08-03 12:48:13,003 views 9356 5412 'Movie exist'
+ERROR 2022-08-03 12:48:37,963 views 9356 5412 'Movie does not exist'
+INFO 2022-08-03 12:48:43,207 views 9356 5412 'Movie exist'
+ERROR 2022-08-03 12:54:57,222 views 16872 6052 'Movie does not exist'
+INFO 2022-08-03 12:55:43,238 views 16872 6052 'Movie exist'
+INFO 2022-08-03 12:56:30,407 views 16872 6052 'Movie exist'
+INFO 2022-08-03 12:59:34,885 views 16872 6052 'Movie exist'
+INFO 2022-08-03 13:03:54,660 views 16872 6052 'Movie exist'
+INFO 2022-08-03 18:53:57,876 views 9852 15056 'All fields are present'
+ERROR 2022-08-03 18:53:57,878 views 9852 15056 'Cannot assign "2": "Booking.payment_status" must be a "PaymentStatus" instance.'
+INFO 2022-08-03 18:54:42,040 views 9852 15056 'All fields are present'
+ERROR 2022-08-03 18:54:42,040 views 9852 15056 'Cannot assign "2": "Booking.payment_status" must be a "PaymentStatus" instance.'
+INFO 2022-08-03 18:57:02,173 views 5920 10016 'All fields are present'
+ERROR 2022-08-03 18:57:02,173 views 5920 10016 'Cannot assign "1": "Booking.payment_status" must be a "PaymentStatus" instance.'
+ERROR 2022-08-03 18:57:06,272 views 5920 10016 ''payment_status''
+INFO 2022-08-03 18:57:27,211 views 7776 9764 'All fields are present'
+ERROR 2022-08-03 18:57:27,211 views 7776 9764 'name 'payment_status' is not defined'
+INFO 2022-08-03 18:57:30,487 views 7776 9764 'All fields are present'
+ERROR 2022-08-03 18:57:30,488 views 7776 9764 'name 'payment_status' is not defined'
+INFO 2022-08-03 18:57:38,193 views 7776 9764 'All fields are present'
+ERROR 2022-08-03 18:57:38,193 views 7776 9764 'name 'payment_status' is not defined'
+INFO 2022-08-03 18:57:55,030 views 7744 6636 'All fields are present'
+ERROR 2022-08-03 18:57:55,031 views 7744 6636 'Cannot assign "1": "Booking.booking_status" must be a "BookingStatus" instance.'
+ERROR 2022-08-03 18:58:28,663 views 14412 6640 'JSON parse error - Expecting property name enclosed in double quotes: line 6 column 5 (char 90)'
+INFO 2022-08-03 18:58:39,507 views 14412 6640 'All fields are present'
+ERROR 2022-08-03 18:58:39,507 views 14412 6640 'Cannot assign "6": "Booking.seats" must be a "CinemaHallSeat" instance.'
+INFO 2022-08-04 11:29:54,859 views 15288 16448 'Started the booking process'
+ERROR 2022-08-04 11:29:54,955 views 15288 16448 ''CinemaHallSeat' object has no attribute 'status''
+INFO 2022-08-04 11:30:31,907 views 14276 9928 'Started the booking process'
+ERROR 2022-08-04 11:30:32,948 views 14276 9928 'Cannot assign "'booked'": "CinemaHallSeat.state" must be a "SeatState" instance.'
+INFO 2022-08-04 11:32:39,427 views 13132 6536 'Started the booking process'
+ERROR 2022-08-04 11:32:39,939 views 13132 6536 'Cannot assign "6": "CinemaHallSeat.state" must be a "SeatState" instance.'
+INFO 2022-08-04 11:36:23,121 views 12904 8908 'Started the booking process'
+ERROR 2022-08-04 11:36:23,825 views 12904 8908 'type object 'SeatState' has no attribute 'ojects''
+INFO 2022-08-04 11:36:37,419 views 1192 4428 'Started the booking process'
+ERROR 2022-08-04 11:36:38,311 views 1192 4428 'Cannot assign "1": "Booking.payment_mode" must be a "PaymentMode" instance.'
+INFO 2022-08-04 11:39:30,797 views 14648 8720 'Started the booking process'
+ERROR 2022-08-04 11:39:31,360 views 14648 8720 'Cannot assign "<class 'Movie_booking_app.models.payments.PaymentMode'>": "Booking.payment_mode" must be a "PaymentMode" instance.'
+INFO 2022-08-04 11:40:07,671 views 6512 6252 'Started the booking process'
+ERROR 2022-08-04 11:40:07,690 views 6512 6252 'Direct assignment to the forward side of a many-to-many set is prohibited. Use seats.set() instead.'
+INFO 2022-08-04 11:40:32,576 views 16004 3756 'Started the booking process'
+ERROR 2022-08-04 11:40:32,600 views 16004 3756 ''list' object has no attribute 'set''
+INFO 2022-08-04 11:40:45,326 views 13088 8148 'Started the booking process'
+ERROR 2022-08-04 11:40:45,349 views 13088 8148 'Direct assignment to the forward side of a many-to-many set is prohibited. Use seats.set() instead.'
+INFO 2022-08-04 11:45:39,780 views 14460 7820 'Started the booking process'
+104 ERROR 2022-08-04 11:50:02,831 views 5888 5940 'Movie does not exist'
+104 ERROR 2022-08-04 11:51:08,332 views 5888 5940 'Movie does not exist'
+166 INFO 2022-08-04 11:51:11,863 views 5888 5940 'Started the booking process'
+189 ERROR 2022-08-04 11:51:11,934 views 5888 5940 'duplicate key value violates unique constraint "Movie_booking_app_booking_cinema_id_key"
+DETAIL:  Key (cinema_id)=(1) already exists.
+'
+166 INFO 2022-08-04 11:54:19,006 views 9836 7420 'Started the booking process'
+166 INFO 2022-08-04 12:00:52,498 views 1740 13776 'Started the booking process'
+166 INFO 2022-08-04 12:06:03,559 views 9380 1804 'Started the booking process'
+166 INFO 2022-08-04 12:09:25,124 views 8056 6000 'Started the booking process'
+166 INFO 2022-08-04 12:11:04,842 views 12328 15380 'Started the booking process'
+190 ERROR 2022-08-04 12:11:05,914 views 12328 15380 'duplicate key value violates unique constraint "Movie_booking_app_booking_cinema_id_key"
+DETAIL:  Key (cinema_id)=(1) already exists.
+'
+166 INFO 2022-08-04 12:11:55,801 views 12328 15380 'Started the booking process'
+166 INFO 2022-08-04 12:12:22,015 views 12328 15380 'Started the booking process'
+166 INFO 2022-08-04 12:13:48,710 views 11576 5832 'Started the booking process'
+190 ERROR 2022-08-04 12:14:52,580 views 11576 5832 'duplicate key value violates unique constraint "Movie_booking_app_booking_cinema_id_key"
+DETAIL:  Key (cinema_id)=(1) already exists.
+'
+166 INFO 2022-08-04 12:44:06,515 views 11064 11932 'Started the booking process'
+166 INFO 2022-08-04 12:45:20,105 views 10816 11016 'Started the booking process'
+166 INFO 2022-08-04 12:45:50,843 views 16196 2088 'Started the booking process'
+166 INFO 2022-08-04 12:49:14,450 views 6036 13632 'Started the booking process'
+166 INFO 2022-08-04 12:51:42,160 views 11204 528 'Started the booking process'
+166 INFO 2022-08-04 12:53:00,522 views 13632 16324 'Started the booking process'
+166 INFO 2022-08-04 12:58:35,857 views 13632 16324 'Started the booking process'
+166 INFO 2022-08-04 12:59:23,404 views 13632 16324 'Started the booking process'
+166 INFO 2022-08-04 13:03:47,271 views 13632 16324 'Started the booking process'
+166 INFO 2022-08-04 14:05:02,983 views 13632 16324 'Started the booking process'
+166 INFO 2022-08-04 14:05:23,516 views 18100 10836 'Started the booking process'
+166 INFO 2022-08-04 14:06:56,255 views 4320 10752 'Started the booking process'
+189 ERROR 2022-08-04 14:06:56,273 views 4320 10752 'Seat is already booked'
+171 INFO 2022-08-04 17:29:21,589 views 11900 4668 'Started the booking process'
+196 ERROR 2022-08-04 17:29:21,599 views 11900 4668 'Seat is already booked'
+171 INFO 2022-08-04 17:30:08,987 views 11900 4668 'Started the booking process'
+171 INFO 2022-08-04 17:33:22,910 views 12304 3944 'Started the booking process'
+198 ERROR 2022-08-04 17:33:22,923 views 12304 3944 'Seat is already booked'
+171 INFO 2022-08-04 17:33:44,792 views 12304 3944 'Started the booking process'
+171 INFO 2022-08-04 17:41:41,904 views 15128 10276 'Started the booking process'
+171 INFO 2022-08-04 17:42:31,749 views 17264 5852 'Started the booking process'
+171 INFO 2022-08-04 17:48:14,913 views 1648 17936 'Started the booking process'
+171 INFO 2022-08-04 17:51:39,814 views 13776 13132 'Started the booking process'
+197 ERROR 2022-08-04 17:51:39,922 views 13776 13132 'Signal receivers must accept keyword arguments (**kwargs).'
+171 INFO 2022-08-04 17:51:59,557 views 9524 10384 'Started the booking process'
+171 INFO 2022-08-04 17:53:34,236 views 4496 15640 'Started the booking process'
+171 INFO 2022-08-04 17:56:24,242 views 10444 17656 'Started the booking process'
+180 INFO 2022-08-04 17:59:31,883 views 9712 12016 'Started the booking process'
+206 ERROR 2022-08-04 17:59:31,899 views 9712 12016 'Seat is already booked'
+180 INFO 2022-08-04 17:59:44,246 views 9712 12016 'Started the booking process'
+181 INFO 2022-08-04 18:02:29,650 views 10444 6028 'Started the booking process'
+186 INFO 2022-08-04 18:37:25,577 views 17868 18076 'Started the booking process'
+213 ERROR 2022-08-04 18:38:25,682 views 17868 18076 ''QuerySet' object has no attribute 'PaymentStatus''
+186 INFO 2022-08-04 18:41:50,960 views 13304 9416 'Started the booking process'
+186 INFO 2022-08-04 18:42:08,868 views 13348 17720 'Started the booking process'
+213 ERROR 2022-08-04 18:42:19,014 views 13348 17720 ''QuerySet' object has no attribute 'payment_status''
+186 INFO 2022-08-04 18:43:33,936 views 6284 11812 'Started the booking process'
+213 ERROR 2022-08-04 18:43:44,009 views 6284 11812 ''QuerySet' object has no attribute 'payment_status''
+186 INFO 2022-08-04 18:44:40,657 views 6084 14048 'Started the booking process'
+186 INFO 2022-08-04 18:45:59,341 views 10648 15804 'Started the booking process'
+186 INFO 2022-08-04 18:47:09,361 views 16924 17900 'Started the booking process'
+186 INFO 2022-08-04 18:48:00,947 views 12836 17792 'Started the booking process'
+186 INFO 2022-08-04 18:49:34,122 views 16348 16072 'Started the booking process'
+186 INFO 2022-08-04 18:50:31,822 views 11456 17580 'Started the booking process'
+189 INFO 2022-08-04 18:55:11,336 views 8436 13776 'Started the booking process'
+190 INFO 2022-08-04 18:58:19,657 views 17460 13408 'Started the booking process'
+217 ERROR 2022-08-04 18:58:24,785 views 17460 13408 'insert or update on table "Movie_booking_app_booking_seats" violates foreign key constraint "Movie_booking_app_bo_cinemahallseat_id_d9e80eeb_fk_Movie_boo"
+DETAIL:  Key (cinemahallseat_id)=(10) is not present in table "Movie_booking_app_cinemahallseat".
+'
+190 INFO 2022-08-04 18:59:18,268 views 17460 13408 'Started the booking process'
+194 INFO 2022-08-05 10:22:27,854 views 13428 14072 'Started the booking process'
+222 ERROR 2022-08-05 10:22:34,131 views 13428 14072 '[WinError 10061] No connection could be made because the target machine actively refused it'
+194 INFO 2022-08-05 10:44:16,701 views 18252 6120 'Started the booking process'
+194 INFO 2022-08-05 10:48:52,363 views 12740 3948 'Started the booking process'
+194 INFO 2022-08-05 10:55:11,445 views 14712 12800 'Started the booking process'
+194 INFO 2022-08-05 10:56:17,920 views 11396 17112 'Started the booking process'
+194 INFO 2022-08-05 10:59:09,612 views 6820 13360 'Started the booking process'
+194 INFO 2022-08-05 11:03:35,508 views 10900 3952 'Started the booking process'
+194 INFO 2022-08-05 11:21:21,452 views 16004 9684 'Started the booking process'
+194 INFO 2022-08-05 11:33:36,688 views 13856 6052 'Started the booking process'
+194 INFO 2022-08-05 11:36:14,350 views 3900 9920 'Started the booking process'
+194 INFO 2022-08-05 11:42:30,279 views 6636 12492 'Started the booking process'
+194 INFO 2022-08-05 11:46:19,796 views 6636 12492 'Started the booking process'
+194 INFO 2022-08-05 11:48:10,864 views 6636 12492 'Started the booking process'
+17 DEBUG 2022-08-05 11:53:35,048 tasks 9068 2369949871872 celery background task started functioning for 1 min
+17 DEBUG 2022-08-05 11:53:35,069 tasks 9068 2369949873632 celery background task started functioning for 1 min
+17 DEBUG 2022-08-05 11:53:35,074 tasks 9068 2369949875040 celery background task started functioning for 1 min
+17 DEBUG 2022-08-05 11:53:35,081 tasks 9068 2369950024096 celery background task started functioning for 1 min
+17 DEBUG 2022-08-05 11:53:35,096 tasks 9068 2369950025504 celery background task started functioning for 1 min
+17 DEBUG 2022-08-05 11:53:35,104 tasks 9068 2369950026912 celery background task started functioning for 1 min
+17 DEBUG 2022-08-05 11:53:35,123 tasks 9068 2369950027968 celery background task started functioning for 1 min
+17 DEBUG 2022-08-05 11:53:35,142 tasks 9068 2369950029376 celery background task started functioning for 1 min
+17 DEBUG 2022-08-05 11:53:35,827 tasks 9068 2369951586032 celery background task started functioning for 1 min
+194 INFO 2022-08-05 11:55:40,703 views 9876 18328 'Started the booking process'
+17 DEBUG 2022-08-05 11:55:40,909 tasks 9068 2369951701776 celery background task started functioning for 1 min
+32 DEBUG 2022-08-05 11:55:41,124 tasks 9068 2369951701776 celery background task finished functioning for 1 min
+194 INFO 2022-08-05 11:58:54,123 views 14380 6816 'Started the booking process'
+17 DEBUG 2022-08-05 11:58:54,375 tasks 9068 2369951928864 celery background task started functioning for 1 min
+32 DEBUG 2022-08-05 11:58:54,580 tasks 9068 2369951928864 celery background task finished functioning for 1 min

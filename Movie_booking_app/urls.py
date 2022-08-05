@@ -39,11 +39,18 @@ urlpatterns = [
     re_path(r"^auth/", include("djoser.urls")),
     re_path(r"^auth/", include("djoser.urls.jwt")),
     path("movie/", MovieViewSet.as_view({"get": "list"}), name="movie"),
+    # cinemawise list of all shows in that cinema
     path(
-        "cinema/shows/<str:slug>/",
-        CinemaViewSet.as_view({"get": "retrieve"}),
-        name="cinema",
+        "shows/cinema",
+        ShowViewSet.as_view({"get": "retrieve"}),
+        name="shows_cinemawise",
     ),
+    path(
+        "shows/movie",
+        CinemaViewSet.as_view({"get": "retrieve"}),
+        name="shows_location_and_moviewise",
+    ),
+    path("booking/", BookViewSet.as_view({"post": "create"}, name="booking")),
 ]
 
 # authentication urls
