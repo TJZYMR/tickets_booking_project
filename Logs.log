@@ -397,3 +397,10 @@ DETAIL:  Key (cinemahallseat_id)=(10) is not present in table "Movie_booking_app
 13 DEBUG 2022-08-05 17:49:13,757 tasks 3064 2142969541584 celery background task started functioning for 1 min
 27 DEBUG 2022-08-05 17:49:13,881 tasks 3064 2142969541584 celery background task finished functioning for 1 min
 165 INFO 2022-08-05 17:50:25,125 views 17456 12240 'Started the booking process'
+165 INFO 2022-08-05 17:52:42,053 views 16976 10288 'Started the booking process'
+188 ERROR 2022-08-05 17:52:42,063 views 16976 10288 'Seat is already booked'
+165 INFO 2022-08-05 17:53:12,782 views 16976 10288 'Started the booking process'
+165 INFO 2022-08-05 17:53:35,730 views 16976 10288 'Started the booking process'
+188 ERROR 2022-08-05 17:53:35,741 views 16976 10288 'Seat is already booked'
+13 DEBUG 2022-08-05 17:53:37,863 tasks 3064 2142969045488 celery background task started functioning for 1 min
+27 DEBUG 2022-08-05 17:53:37,965 tasks 3064 2142969045488 celery background task finished functioning for 1 min
