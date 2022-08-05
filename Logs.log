@@ -261,3 +261,139 @@ DETAIL:  Key (cinemahallseat_id)=(10) is not present in table "Movie_booking_app
 194 INFO 2022-08-05 12:01:04,079 views 688 13752 'Started the booking process'
 17 DEBUG 2022-08-05 12:01:29,253 tasks 9068 2369951933968 celery background task started functioning for 1 min
 32 DEBUG 2022-08-05 12:01:29,686 tasks 9068 2369951933968 celery background task finished functioning for 1 min
+166 INFO 2022-08-05 14:15:19,774 views 16960 2548 'Started the booking process'
+189 ERROR 2022-08-05 14:15:19,809 views 16960 2548 'booking_post_save() missing 1 required positional argument: 'sswnder''
+166 INFO 2022-08-05 14:15:37,997 views 12248 7356 'Started the booking process'
+189 ERROR 2022-08-05 14:15:38,032 views 12248 7356 ''seats''
+166 INFO 2022-08-05 14:18:45,518 views 11924 8488 'Started the booking process'
+166 INFO 2022-08-05 14:22:34,379 views 13692 12616 'Started the booking process'
+166 INFO 2022-08-05 14:24:32,481 views 7708 18164 'Started the booking process'
+166 INFO 2022-08-05 14:28:06,035 views 16260 13860 'Started the booking process'
+189 ERROR 2022-08-05 14:28:06,168 views 16260 13860 ''seats''
+166 INFO 2022-08-05 14:29:47,396 views 4000 15928 'Started the booking process'
+189 ERROR 2022-08-05 14:29:47,518 views 4000 15928 ''seats''
+166 INFO 2022-08-05 14:30:18,355 views 1228 17660 'Started the booking process'
+189 ERROR 2022-08-05 14:30:18,456 views 1228 17660 ''seats''
+166 INFO 2022-08-05 14:32:22,971 views 15744 10932 'Started the booking process'
+189 ERROR 2022-08-05 14:32:23,085 views 15744 10932 ''Booking' object has no attribute 'seat''
+166 INFO 2022-08-05 14:32:38,799 views 6776 1032 'Started the booking process'
+189 ERROR 2022-08-05 14:32:38,931 views 6776 1032 'Cannot resolve keyword 'seat' into field. Choices are: booking_date_time, booking_status, booking_status_id, cinema, cinema_id, cinemahall, cinemahall_id, id, movie, movie_id, payment_mode, payment_mode_id, payment_status, payment_status_id, seats, show, show_id, slug, total_amount, user, user_id'
+166 INFO 2022-08-05 14:32:49,157 views 10592 6504 'Started the booking process'
+189 ERROR 2022-08-05 14:32:49,278 views 10592 6504 'Field 'id' expected a number but got <django.db.models.fields.related_descriptors.create_forward_many_to_many_manager.<locals>.ManyRelatedManager object at 0x000001E356FE5EA0>.'
+166 INFO 2022-08-05 14:35:02,408 views 14212 4000 'Started the booking process'
+189 ERROR 2022-08-05 14:35:02,535 views 14212 4000 ''Booking' object has no attribute 'through''
+166 INFO 2022-08-05 14:36:03,907 views 4736 4620 'Started the booking process'
+189 ERROR 2022-08-05 14:36:04,040 views 4736 4620 'Cannot use QuerySet for "Booking_seats": Use a QuerySet for "CinemaHallSeat".'
+166 INFO 2022-08-05 14:36:31,849 views 16920 8348 'Started the booking process'
+189 ERROR 2022-08-05 14:36:32,006 views 16920 8348 'Cannot resolve keyword 'seats' into field. Choices are: booking, cinema_hall, cinema_hall_id, id, price, seatColumn, seatRow, seat_number, seat_type, seat_type_id, slug, state, state_id'
+166 INFO 2022-08-05 14:38:38,810 views 6784 7692 'Started the booking process'
+189 ERROR 2022-08-05 14:38:38,944 views 6784 7692 'Field 'id' expected a number but got <django.db.models.fields.related_descriptors.create_forward_many_to_many_manager.<locals>.ManyRelatedManager object at 0x000001EF4D375D50>.'
+166 INFO 2022-08-05 14:38:53,179 views 11868 6532 'Started the booking process'
+189 ERROR 2022-08-05 14:38:53,312 views 11868 6532 ''seats''
+166 INFO 2022-08-05 14:39:55,706 views 6764 7128 'Started the booking process'
+189 ERROR 2022-08-05 14:39:55,822 views 6764 7128 ''ManyToManyDescriptor' object has no attribute 'all''
+166 INFO 2022-08-05 14:41:09,105 views 7980 3188 'Started the booking process'
+189 ERROR 2022-08-05 14:41:09,218 views 7980 3188 ''seats''
+166 INFO 2022-08-05 14:42:29,435 views 2228 5984 'Started the booking process'
+189 ERROR 2022-08-05 14:42:29,578 views 2228 5984 ''Booking' object has no attribute 'seats_set''
+166 INFO 2022-08-05 14:44:36,796 views 4716 16180 'Started the booking process'
+189 ERROR 2022-08-05 14:44:36,929 views 4716 16180 ''Booking' object has no attribute 'related''
+166 INFO 2022-08-05 14:45:17,304 views 12868 3108 'Started the booking process'
+189 ERROR 2022-08-05 14:45:17,435 views 12868 3108 ''seats''
+166 INFO 2022-08-05 14:46:45,345 views 7804 14008 'Started the booking process'
+189 ERROR 2022-08-05 14:46:45,558 views 7804 14008 ''seats''
+166 INFO 2022-08-05 14:47:11,304 views 3612 11088 'Started the booking process'
+189 ERROR 2022-08-05 14:47:11,444 views 3612 11088 'Booking_seats matching query does not exist.'
+166 INFO 2022-08-05 14:48:06,501 views 6776 18112 'Started the booking process'
+189 ERROR 2022-08-05 14:48:06,624 views 6776 18112 ''seats''
+166 INFO 2022-08-05 14:50:12,787 views 16236 3988 'Started the booking process'
+189 ERROR 2022-08-05 14:50:12,915 views 16236 3988 ''seats''
+166 INFO 2022-08-05 14:51:17,534 views 5988 12728 'Started the booking process'
+189 ERROR 2022-08-05 14:51:17,696 views 5988 12728 ''seats''
+166 INFO 2022-08-05 14:52:20,649 views 13360 18192 'Started the booking process'
+13 DEBUG 2022-08-05 14:53:20,122 tasks 12492 2698857242592 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:20,132 tasks 12492 2698857244000 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:20,138 tasks 12492 2698857245408 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:20,147 tasks 12492 2698857246816 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:20,169 tasks 12492 2698857248224 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:20,181 tasks 12492 2698857249632 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:20,199 tasks 12492 2698857398688 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:20,210 tasks 12492 2698857539792 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:20,590 tasks 12492 2698858851392 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:20,698 tasks 12492 2698858206960 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:20,702 tasks 12492 2698857404320 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:20,707 tasks 12492 2698859138912 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:20,719 tasks 12492 2698857938112 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:20,730 tasks 12492 2698859197744 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:20,752 tasks 12492 2698859198800 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:20,848 tasks 12492 2698859322656 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:21,009 tasks 12492 2698857412768 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:21,013 tasks 12492 2698857414176 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:21,019 tasks 12492 2698859551504 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:21,068 tasks 12492 2698859592544 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:21,111 tasks 12492 2698859641344 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:21,119 tasks 12492 2698857534688 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:21,129 tasks 12492 2698859844656 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:21,210 tasks 12492 2698859873552 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 14:53:21,351 tasks 12492 2698860013424 celery background task started functioning for 1 min
+166 INFO 2022-08-05 14:53:21,577 views 13360 18192 'Started the booking process'
+13 DEBUG 2022-08-05 14:53:46,608 tasks 12492 2698860155424 celery background task started functioning for 1 min
+27 DEBUG 2022-08-05 14:53:46,701 tasks 12492 2698860155424 celery background task finished functioning for 1 min
+166 INFO 2022-08-05 14:54:08,659 views 13360 18192 'Started the booking process'
+13 DEBUG 2022-08-05 14:54:33,713 tasks 12492 2698860139744 celery background task started functioning for 1 min
+27 DEBUG 2022-08-05 14:54:33,797 tasks 12492 2698860139744 celery background task finished functioning for 1 min
+166 INFO 2022-08-05 14:56:29,372 views 10648 9464 'Started the booking process'
+13 DEBUG 2022-08-05 14:56:54,417 tasks 12492 2698860010256 celery background task started functioning for 1 min
+27 DEBUG 2022-08-05 14:56:54,532 tasks 12492 2698860010256 celery background task finished functioning for 1 min
+166 INFO 2022-08-05 14:58:19,344 views 13336 10752 'Started the booking process'
+13 DEBUG 2022-08-05 14:58:44,415 tasks 12492 2698860005504 celery background task started functioning for 1 min
+27 DEBUG 2022-08-05 14:58:44,497 tasks 12492 2698860005504 celery background task finished functioning for 1 min
+166 INFO 2022-08-05 15:00:51,033 views 7920 7128 'Started the booking process'
+189 ERROR 2022-08-05 15:00:51,158 views 7920 7128 'can only concatenate str (not "QuerySet") to str'
+166 INFO 2022-08-05 15:01:10,494 views 6516 15736 'Started the booking process'
+13 DEBUG 2022-08-05 15:01:16,104 tasks 12492 2698860068208 celery background task started functioning for 1 min
+13 DEBUG 2022-08-05 15:01:35,559 tasks 12492 2698859884816 celery background task started functioning for 1 min
+27 DEBUG 2022-08-05 15:01:35,662 tasks 12492 2698859884816 celery background task finished functioning for 1 min
+166 INFO 2022-08-05 15:04:33,157 views 4756 12312 'Started the booking process'
+13 DEBUG 2022-08-05 15:04:58,275 tasks 12492 2698860053072 celery background task started functioning for 1 min
+166 INFO 2022-08-05 15:24:17,397 views 15136 8456 'Started the booking process'
+13 DEBUG 2022-08-05 15:24:42,502 tasks 3064 2142968491776 celery background task started functioning for 1 min
+27 DEBUG 2022-08-05 15:24:42,579 tasks 3064 2142968491776 celery background task finished functioning for 1 min
+166 INFO 2022-08-05 15:25:46,739 views 5044 17460 'Started the booking process'
+13 DEBUG 2022-08-05 15:26:11,825 tasks 3064 2142968704768 celery background task started functioning for 1 min
+27 DEBUG 2022-08-05 15:26:11,904 tasks 3064 2142968704768 celery background task finished functioning for 1 min
+166 INFO 2022-08-05 16:32:15,465 views 8432 9300 'Started the booking process'
+13 DEBUG 2022-08-05 16:33:02,866 tasks 3064 2142968489136 celery background task started functioning for 1 min
+189 ERROR 2022-08-05 16:39:42,075 views 4080 12488 ''builtin_function_or_method' object is not subscriptable'
+187 ERROR 2022-08-05 16:41:06,448 views 6476 8016 'local variable 'payment_mode' referenced before assignment'
+165 INFO 2022-08-05 16:41:17,285 views 10144 3724 'Started the booking process'
+13 DEBUG 2022-08-05 16:41:42,371 tasks 3064 2142969041264 celery background task started functioning for 1 min
+27 DEBUG 2022-08-05 16:41:42,611 tasks 3064 2142969041264 celery background task finished functioning for 1 min
+165 INFO 2022-08-05 16:41:58,388 views 10144 3724 'Started the booking process'
+13 DEBUG 2022-08-05 16:42:23,467 tasks 3064 2142969037216 celery background task started functioning for 1 min
+27 DEBUG 2022-08-05 16:42:23,564 tasks 3064 2142969037216 celery background task finished functioning for 1 min
+165 INFO 2022-08-05 17:00:08,631 views 2120 6084 'Started the booking process'
+13 DEBUG 2022-08-05 17:00:33,725 tasks 3064 2142968698960 celery background task started functioning for 1 min
+27 DEBUG 2022-08-05 17:00:33,819 tasks 3064 2142968698960 celery background task finished functioning for 1 min
+165 INFO 2022-08-05 17:00:57,897 views 2120 6084 'Started the booking process'
+13 DEBUG 2022-08-05 17:01:22,965 tasks 3064 2142968113712 celery background task started functioning for 1 min
+27 DEBUG 2022-08-05 17:01:23,072 tasks 3064 2142968113712 celery background task finished functioning for 1 min
+165 INFO 2022-08-05 17:02:13,364 views 2120 6084 'Started the booking process'
+13 DEBUG 2022-08-05 17:02:38,467 tasks 3064 2142968703360 celery background task started functioning for 1 min
+27 DEBUG 2022-08-05 17:02:38,725 tasks 3064 2142968703360 celery background task finished functioning for 1 min
+165 INFO 2022-08-05 17:17:12,201 views 15736 10900 'Started the booking process'
+13 DEBUG 2022-08-05 17:17:37,328 tasks 3064 2142969041792 celery background task started functioning for 1 min
+27 DEBUG 2022-08-05 17:17:37,432 tasks 3064 2142969041792 celery background task finished functioning for 1 min
+165 INFO 2022-08-05 17:19:18,477 views 8120 2728 'Started the booking process'
+13 DEBUG 2022-08-05 17:20:05,804 tasks 3064 2142969538768 celery background task started functioning for 1 min
+27 DEBUG 2022-08-05 17:20:05,916 tasks 3064 2142969538768 celery background task finished functioning for 1 min
+165 INFO 2022-08-05 17:45:05,425 views 16812 4180 'Started the booking process'
+13 DEBUG 2022-08-05 17:45:30,524 tasks 3064 2142969051296 celery background task started functioning for 1 min
+27 DEBUG 2022-08-05 17:45:30,620 tasks 3064 2142969051296 celery background task finished functioning for 1 min
+165 INFO 2022-08-05 17:46:29,064 views 17600 13928 'Started the booking process'
+13 DEBUG 2022-08-05 17:46:54,237 tasks 3064 2142969048832 celery background task started functioning for 1 min
+27 DEBUG 2022-08-05 17:46:54,325 tasks 3064 2142969048832 celery background task finished functioning for 1 min
+165 INFO 2022-08-05 17:48:48,666 views 15776 9592 'Started the booking process'
+13 DEBUG 2022-08-05 17:49:13,757 tasks 3064 2142969541584 celery background task started functioning for 1 min
+27 DEBUG 2022-08-05 17:49:13,881 tasks 3064 2142969541584 celery background task finished functioning for 1 min
+165 INFO 2022-08-05 17:50:25,125 views 17456 12240 'Started the booking process'

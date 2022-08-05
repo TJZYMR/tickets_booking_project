@@ -50,7 +50,7 @@ from django_filters import rest_framework as filters
 from rest_framework import status
 import logging
 
-from Movie_booking_app.tasks import seat_timeout, add
+from Movie_booking_app.tasks import seat_timeout
 
 logger = logging.getLogger(__name__)
 # class BookingViewSet(viewsets.ModelViewSet):
@@ -66,7 +66,6 @@ from django.db.models import Prefetch
 
 # from django.db.models import Prefetch
 
-from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
 from django.views.decorators.vary import vary_on_cookie
 
@@ -149,47 +148,19 @@ class MovieViewSet(viewsets.ViewSet):
 
 from django.db import transaction
 
-from django.core.signals import request_finished
-
-# def timeout(seats, booking_id):
-
-#     print("singal started calling")
-#     import time
-
-#     payment_pending = PaymentStatus.objects.get(id=2)
-#     book_cancelled = BookingStatus.objects.get(id=5)
-#     payment_cancelled = PaymentStatus.objects.get(id=4)
-#     print(seats, booking_id)
-#     time.sleep(5)
-#     if Booking.objects.get(id=booking_id).payment_status == payment_pending:
-#         Booking.objects.filter(id=booking_id).update(
-#             payment_status=payment_cancelled, booking_status=book_cancelled
-#         )
-#         for seat in CinemaHallSeat.objects.filter(id__in=seats):
-#             seat.state = SeatState.objects.get(id=1)
-#             seat.save()
-#     print("signal finished!")
-
-
-# now try to call celery task after seat booked,so no more waiitng time for lient s after booking.
-
 
 class BookViewSet(viewsets.ViewSet):
     def create(self, request):
         try:
-            # for getting query parameters' value we added kwargs and below request to get method
-            # user_id = request.data.get("user_id")
+            # !for getting query parameters' value we added kwargs and below request to get method
             movie_id = request.data["movie_id"]
             cinema_id = request.data["cinema_id"]
             cinemahall_id = request.data["cinemahall_id"]
             show_id = request.data["show_id"]
-            # payment_status = request.data["payment_status"]
-            # booking_status = request.data["booking_status"]
             seats = request.data["seats"]
             total_amount = request.data["total_amount"]
             user_id = request.data["user_id"]
-            payment_mode = request.data.get("payment_mode")
-            # coupen_id = request.data.get("coupen_id")
+            payment_mode = request.data["payment_mode"]
             payment_mode = PaymentMode.objects.get(id=payment_mode)
             logger.info("'Started the booking process'")
             with transaction.atomic():
@@ -205,19 +176,14 @@ class BookViewSet(viewsets.ViewSet):
                     cinema_id=cinema_id,
                     cinemahall_id=cinemahall_id,
                     show_id=show_id,
-                    # seats=seats,
                     total_amount=total_amount,
                     payment_mode=payment_mode,
                 )
-                # , {"seats": seats, "booking_id": queryset.id}
-                # request_finished.connect(my_callback, )
                 seat_timeout.apply_async((seats, queryset.id), countdown=25)
-                # add.delay(1, 2)
+                # ! setting the seats many to many field here,like this,it is set like this in this relationship.
                 queryset.seats.set(seats)
                 serializer = BookingSerializer(queryset)
-                return Response(serializer.data, status=status.HTTP_201_CREATED)
-            # else:
-            #     raise Exception("All fields are not present")
+                return Response(serializer.data, status=status.HTTP_201_CREATED)    
         except Exception as e:
             logger.error(f"'{e}'")
             return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)

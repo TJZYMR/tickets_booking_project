@@ -7,6 +7,7 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
     TokenVerifyView,
 )
+from Movie_booking_app.views import *
 
 # router = DefaultRouter()
 # router.register(r"registration", UserViewSet, basename="registration")
