@@ -5,7 +5,12 @@ from celery import Celery
 # Set the default Django settings module for the 'celery' program.
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Movie_tickets_booking.settings")
 
-app = Celery("Movie_tickets_booking")
+app = Celery(
+    "Movie_tickets_booking",
+    broker="amqp://guest:guest@localhost:5672//",
+    # backend="amqp://",
+    include=["Movie_booking_app.tasks"],
+)
 
 # Using a string here means the worker doesn't have to serialize
 # the configuration object to child processes.

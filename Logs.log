@@ -404,3 +404,118 @@ DETAIL:  Key (cinemahallseat_id)=(10) is not present in table "Movie_booking_app
 188 ERROR 2022-08-05 17:53:35,741 views 16976 10288 'Seat is already booked'
 13 DEBUG 2022-08-05 17:53:37,863 tasks 3064 2142969045488 celery background task started functioning for 1 min
 27 DEBUG 2022-08-05 17:53:37,965 tasks 3064 2142969045488 celery background task finished functioning for 1 min
+165 INFO 2022-08-05 18:47:19,199 views 3344 2280 'Started the booking process'
+188 ERROR 2022-08-05 18:47:19,217 views 3344 2280 'Seat is already booked'
+165 INFO 2022-08-05 18:47:20,670 views 3344 2280 'Started the booking process'
+188 ERROR 2022-08-05 18:47:20,674 views 3344 2280 'Seat is already booked'
+128 ERROR 2022-08-06 09:10:53,883 views 11984 13584 'Movie_booking_app.tasks.booking_task() argument after * must be an iterable, not Request'
+135 INFO 2022-08-06 09:14:34,259 views 464 7704 'Started the booking process'
+139 ERROR 2022-08-06 09:14:34,271 views 464 7704 'booking_task() takes 1 positional argument but 8 were given'
+135 INFO 2022-08-06 09:14:59,152 views 8640 8720 'Started the booking process'
+139 ERROR 2022-08-06 09:14:59,167 views 8640 8720 'booking_task() takes 0 positional arguments but 8 were given'
+135 INFO 2022-08-06 09:16:00,499 views 7776 5312 'Started the booking process'
+139 ERROR 2022-08-06 09:16:00,511 views 7776 5312 'booking_task() takes 2 positional arguments but 8 were given'
+135 INFO 2022-08-06 09:18:34,324 views 300 4736 'Started the booking process'
+139 ERROR 2022-08-06 09:18:34,334 views 300 4736 'booking_task() takes from 0 to 1 positional arguments but 8 were given'
+135 INFO 2022-08-06 09:21:39,244 views 18048 9872 'Started the booking process'
+139 ERROR 2022-08-06 09:21:39,257 views 18048 9872 'booking_task() takes 2 positional arguments but 8 were given'
+135 INFO 2022-08-06 09:22:09,531 views 7744 5456 'Started the booking process'
+139 ERROR 2022-08-06 09:22:09,543 views 7744 5456 'booking_task() takes 2 positional arguments but 9 were given'
+135 INFO 2022-08-06 09:23:30,065 views 1828 15492 'Started the booking process'
+148 ERROR 2022-08-06 09:23:30,078 views 1828 15492 'functools.partial(<function booking_task at 0x000001416BE5C790>, <object object at 0x00000141694FFD20>) argument after * must be an iterable, not BookViewSet'
+135 INFO 2022-08-06 09:26:13,352 views 15848 7132 'Started the booking process'
+149 ERROR 2022-08-06 09:26:13,364 views 15848 7132 'Task.apply_async() takes from 1 to 8 positional arguments but 10 were given'
+135 INFO 2022-08-06 09:27:16,183 views 8340 4020 'Started the booking process'
+148 ERROR 2022-08-06 09:27:16,190 views 8340 4020 'functools.partial(<function booking_task at 0x00000257B0B36440>, <object object at 0x00000257ADFDFCB0>) argument after * must be an iterable, not BookViewSet'
+135 INFO 2022-08-06 09:30:48,572 views 16472 7572 'Started the booking process'
+135 INFO 2022-08-06 09:32:53,723 views 8580 16100 'Started the booking process'
+148 ERROR 2022-08-06 09:33:02,311 views 8580 16100 'booking_task() takes 2 positional arguments but 3 were given'
+135 INFO 2022-08-06 09:33:32,952 views 17388 15752 'Started the booking process'
+148 ERROR 2022-08-06 09:33:38,669 views 17388 15752 'Object of type PaymentMode is not JSON serializable'
+135 INFO 2022-08-06 09:33:49,359 views 17388 15752 'Started the booking process'
+148 ERROR 2022-08-06 09:34:01,573 views 17388 15752 'Object of type PaymentMode is not JSON serializable'
+135 INFO 2022-08-06 09:34:32,575 views 17388 15752 'Started the booking process'
+148 ERROR 2022-08-06 09:35:15,473 views 17388 15752 'Object of type PaymentMode is not JSON serializable'
+135 INFO 2022-08-06 09:36:50,381 views 17388 15752 'Started the booking process'
+148 ERROR 2022-08-06 09:37:07,132 views 17388 15752 'Object of type PaymentMode is not JSON serializable'
+135 INFO 2022-08-06 09:37:11,290 views 17388 15752 'Started the booking process'
+135 INFO 2022-08-06 09:40:12,535 views 11064 12356 'Started the booking process'
+135 INFO 2022-08-06 09:40:52,059 views 2168 7444 'Started the booking process'
+135 INFO 2022-08-06 09:41:14,674 views 17512 4120 'Started the booking process'
+148 ERROR 2022-08-06 09:41:14,679 views 17512 4120 'booking_task() takes 1 positional argument but 2 were given'
+135 INFO 2022-08-06 09:41:29,648 views 16052 7140 'Started the booking process'
+148 ERROR 2022-08-06 09:41:29,653 views 16052 7140 'name 'sedict' is not defined'
+135 INFO 2022-08-06 09:41:56,760 views 16052 7140 'Started the booking process'
+148 ERROR 2022-08-06 09:41:56,760 views 16052 7140 'name 'sedict' is not defined'
+135 INFO 2022-08-06 09:42:40,796 views 8248 12916 'Started the booking process'
+148 ERROR 2022-08-06 09:42:50,281 views 8248 12916 'booking_task() takes 2 positional arguments but 3 were given'
+135 INFO 2022-08-06 09:43:25,611 views 15900 7044 'Started the booking process'
+135 INFO 2022-08-06 09:45:46,601 views 10048 13568 'Started the booking process'
+150 ERROR 2022-08-06 09:45:46,641 views 10048 13568 ''AsyncResult' object has no attribute 'data''
+135 INFO 2022-08-06 09:46:09,280 views 10112 13336 'Started the booking process'
+135 INFO 2022-08-06 09:47:04,889 views 14480 9260 'Started the booking process'
+152 ERROR 2022-08-06 09:47:04,933 views 14480 9260 'invalid literal for int() with base 10: '6367e5b5-ef66-41cb-9bb5-f07064cea411''
+135 INFO 2022-08-06 09:48:29,191 views 11596 17104 'Started the booking process'
+135 INFO 2022-08-06 09:50:57,252 views 7392 14616 'Started the booking process'
+153 ERROR 2022-08-06 09:51:03,238 views 7392 14616 'No result backend is configured.
+Please see the documentation for more information.'
+135 INFO 2022-08-06 09:53:42,624 views 4304 12860 'Started the booking process'
+153 ERROR 2022-08-06 09:53:43,707 views 4304 12860 'No module named 'celery.backends.amqp''
+135 INFO 2022-08-06 09:54:47,307 views 8684 14564 'Started the booking process'
+153 ERROR 2022-08-06 09:54:47,940 views 8684 14564 'No result backend is configured.
+Please see the documentation for more information.'
+135 INFO 2022-08-06 09:55:30,895 views 2524 2040 'Started the booking process'
+153 ERROR 2022-08-06 09:55:36,031 views 2524 2040 'No result backend is configured.
+Please see the documentation for more information.'
+135 INFO 2022-08-06 09:56:16,861 views 2524 2040 'Started the booking process'
+153 ERROR 2022-08-06 09:56:17,638 views 2524 2040 'No result backend is configured.
+Please see the documentation for more information.'
+135 INFO 2022-08-06 09:57:47,381 views 16884 10244 'Started the booking process'
+153 ERROR 2022-08-06 09:57:48,224 views 16884 10244 'No result backend is configured.
+Please see the documentation for more information.'
+16 DEBUG 2022-08-06 09:58:13,324 tasks 11536 2399356836272 celery background task started functioning for 1 min
+30 DEBUG 2022-08-06 09:58:13,386 tasks 11536 2399356836272 celery background task finished functioning for 1 min
+144 INFO 2022-08-06 10:01:55,460 views 11500 5592 'Started the booking process'
+163 ERROR 2022-08-06 10:01:55,463 views 11500 5592 'list indices must be integers or slices, not str'
+144 INFO 2022-08-06 10:02:11,003 views 11500 5592 'Started the booking process'
+144 INFO 2022-08-06 10:03:11,443 views 7208 5112 'Started the booking process'
+163 ERROR 2022-08-06 10:03:16,712 views 7208 5112 'No result backend is configured.
+Please see the documentation for more information.'
+144 INFO 2022-08-06 10:05:33,395 views 16236 8852 'Started the booking process'
+165 ERROR 2022-08-06 10:05:34,563 views 16236 8852 ''Exception' object has no attribute 'message''
+144 INFO 2022-08-06 10:05:55,093 views 14884 6060 'Started the booking process'
+165 ERROR 2022-08-06 10:05:56,961 views 14884 6060 'Seat is already booked'
+144 INFO 2022-08-06 10:06:19,860 views 14884 6060 'Started the booking process'
+165 ERROR 2022-08-06 10:06:21,664 views 14884 6060 'No result backend is configured.
+Please see the documentation for more information.'
+144 INFO 2022-08-06 10:08:34,900 views 13944 2924 'Started the booking process'
+167 ERROR 2022-08-06 10:08:34,915 views 13944 2924 'Seat is already booked'
+144 INFO 2022-08-06 10:08:52,900 views 13944 2924 'Started the booking process'
+167 ERROR 2022-08-06 10:08:54,982 views 13944 2924 'No result backend is configured.
+Please see the documentation for more information.'
+16 DEBUG 2022-08-06 10:09:19,979 tasks 11536 2399356458032 celery background task started functioning for 1 min
+144 INFO 2022-08-06 10:10:27,781 views 8084 15388 'Started the booking process'
+167 ERROR 2022-08-06 10:10:27,815 views 8084 15388 'Seat is already booked'
+144 INFO 2022-08-06 10:10:41,140 views 8084 15388 'Started the booking process'
+167 ERROR 2022-08-06 10:10:42,266 views 8084 15388 'No result backend is configured.
+Please see the documentation for more information.'
+16 DEBUG 2022-08-06 10:11:07,278 tasks 11536 2399357010336 celery background task started functioning for 1 min
+144 INFO 2022-08-06 10:11:31,345 views 5352 16520 'Started the booking process'
+167 ERROR 2022-08-06 10:11:31,361 views 5352 16520 'Seat is already booked'
+144 INFO 2022-08-06 10:11:59,819 views 5352 16520 'Started the booking process'
+167 ERROR 2022-08-06 10:12:21,702 views 5352 16520 'No result backend is configured.
+Please see the documentation for more information.'
+16 DEBUG 2022-08-06 10:12:37,503 tasks 11536 2399357019664 celery background task started functioning for 1 min
+146 INFO 2022-08-06 10:13:46,123 views 12784 4040 'Started the booking process'
+169 ERROR 2022-08-06 10:13:46,137 views 12784 4040 'Seat is already booked'
+146 INFO 2022-08-06 10:14:06,988 views 12784 4040 'Started the booking process'
+16 DEBUG 2022-08-06 10:14:32,111 tasks 11536 2399357023888 celery background task started functioning for 1 min
+30 DEBUG 2022-08-06 10:14:32,171 tasks 11536 2399357023888 celery background task finished functioning for 1 min
+146 INFO 2022-08-06 10:29:22,063 views 6080 2836 'Started the booking process'
+146 INFO 2022-08-06 10:29:25,955 views 6080 2836 'Started the booking process'
+169 ERROR 2022-08-06 10:29:25,959 views 6080 2836 'Seat is already booked'
+13 DEBUG 2022-08-06 10:29:47,125 tasks 14728 2396393195296 celery background task started functioning for 1 min
+27 DEBUG 2022-08-06 10:29:47,197 tasks 14728 2396393195296 celery background task finished functioning for 1 min
+146 INFO 2022-08-06 10:31:39,997 views 6080 2836 'Started the booking process'
+13 DEBUG 2022-08-06 10:32:05,021 tasks 14728 2396392934208 celery background task started functioning for 1 min
+27 DEBUG 2022-08-06 10:32:05,193 tasks 14728 2396392934208 celery background task finished functioning for 1 min

@@ -106,16 +106,6 @@ class CinemaViewSet(viewsets.ModelViewSet):
             return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
 
-# class CinemaHallViewSet(viewsets.ModelViewSet):
-#     queryset = CinemaHall.objects.all()
-#     serializer_class = CinemaHallSerializer
-
-
-# class CinemaHallSeatViewSet(viewsets.ModelViewSet):
-#     queryset = CinemaHallSeat.objects.all()
-#     serializer_class = CinemaHallSeatSerializer
-
-
 class MovieViewSet(viewsets.ViewSet):
     queryset = Movie.objects.all()
     serializer_class = MovieSerializer
@@ -136,15 +126,6 @@ class MovieViewSet(viewsets.ViewSet):
         serializer = self.get_serializer(queryset, many=True)
         return Response(serializer.data)
 
-
-# class ShowViewSet(viewsets.ModelViewSet):
-#     queryset = Show.objects.all()
-#     serializer_class = ShowSerializer
-
-
-# class PaymentStatusViewSet(viewsets.ModelViewSet):
-#     queryset = PaymentStatus.objects.all()
-#     serializer_class = PaymentStatusSerializer
 
 from django.db import transaction
 
@@ -183,15 +164,10 @@ class BookViewSet(viewsets.ViewSet):
                 # ! setting the seats many to many field here,like this,it is set like this in this relationship.
                 queryset.seats.set(seats)
                 serializer = BookingSerializer(queryset)
-                return Response(serializer.data, status=status.HTTP_201_CREATED)    
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
         except Exception as e:
             logger.error(f"'{e}'")
             return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
-
-
-# class AccountStatusViewSet(viewsets.ModelViewSet):
-#     queryset = AccountStatus.objects.all()
-#     serializer_class = AccountStatusSerializer
 
 
 class UserViewSet(viewsets.ViewSet):
@@ -247,11 +223,6 @@ class UserViewSet(viewsets.ViewSet):
             return Response(
                 {"message": "User does not exist"}, status=status.HTTP_404_NOT_FOUND
             )
-
-
-# class PaymentModeViewSet(viewsets.ModelViewSet):
-#     queryset = PaymentMode.objects.all()
-#     serializer_class = PaymentModeSerializer
 
 
 # class PaymentViewSet(viewsets.ModelViewSet):

@@ -1,0 +1,14 @@
+1)e-ticket in pdf format must be mailed to user after payment_status has changed to paid.
+2)if user wants to have notification of available seats when asked for in keep me posted in booking time,the notification should be provided.
+3)third party payment gateway integration.
+4)implement caching for movie search or any search using redis and django-redis
+5)try to fit Apache kafka in one use-case in this project.
+6)when show is over,then all the seats should switch back to empty.
+7)when user tries to cancel the booking then that seat should be made empty and then the message of the seat cancelled should be sent to the user who cancelled it.
+8)try learning prefetch_Related and trying to fit it in this project,anyhow.
+
+
+where message queue can be used:
+1)when user does the booking request,then it should go for first in message queue and then it secondly in worker task to be completed.
+2)when payment is paid,then for sending email of e-ticket to the user.
+3)when user has subscribed to the notification system for some tickets,then it for sending user notification,there should be topic used for that.

@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
     "guardian",
     "django_filters",
+    "django_celery_results",
 ]
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -202,3 +203,18 @@ AUTHENTICATION_BACKENDS = (
     "guardian.backends.ObjectPermissionBackend",
 )
 CELERY_BROKER_URL = "amqp://guest:guest@localhost:5672//"
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django_redis.cache.RedisCache",
+#         "LOCATION": "redis://default:Ps5vxbivWW5MwGJaZmOf4MINiJONj2Tb@redis-13547.c305.ap-south-1-1.ec2.cloud.redislabs.com:13547",
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#         },
+#     }
+# }
+# SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+# SESSION_CACHE_ALIAS = "default"
+CELERY_TASK_RESULT_EXPIRES = 18000
+CELERY_RESULT_BACKEND = "django-db"
+CELERY_CACHE_BACKEND = "django-cache"
+CELERY_RESULT_EXTENDED = True
