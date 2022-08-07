@@ -1,2 +1,9 @@
 1)celery start worker=celery -A Movie_tickets_booking worker --loglevel=info -P eventlet
 2)in celery there are two things when calling function that is first is delay to call the task and second is appply_Async to provide args to task with time delay.
+3)celery beat=celery -A Movie_tickets_booking beat -l info
+
+
+Final commands:=>(sequential is mendatory)
+1)python manage.py runserver
+2)celery -A Movie_tickets_booking worker --loglevel=info -P eventlet
+3)celery -A Movie_tickets_booking beat -l info

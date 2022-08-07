@@ -7,8 +7,8 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Movie_tickets_booking.settings"
 
 app = Celery(
     "Movie_tickets_booking",
-    broker="amqp://guest:guest@localhost:5672//",
-    # backend="amqp://",
+    # broker="amqp://guest:guest@localhost:5672//",
+    # backend="redis://localhost",
     include=["Movie_booking_app.tasks"],
 )
 
@@ -25,3 +25,16 @@ app.autodiscover_tasks()
 @app.task(bind=True)
 def debug_task(self):
     print(f"Request: {self.request!r}")
+
+
+app.conf.beat_schedule = {
+    # Scheduler Name
+    "print-message-ten-seconds": {
+        # Task Name (Name Specified in Decorator)
+        "task": "print_msg_main",
+        # Schedule
+        "schedule": 10.0,
+        # Function Arguments
+        "args": ("Hello",),
+    }
+}

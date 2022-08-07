@@ -23,7 +23,16 @@ from Movie_booking_app.models import (
 class BookingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Booking
-        fields = "__all__"
+        fields = [
+            "total_amount",
+            "movie",
+            "cinema",
+            "cinemahall",
+            "show",
+            "booking_status",
+            "seats",
+            "payment_status",
+        ]
 
 
 class SeatTypeSerializer(serializers.ModelSerializer):

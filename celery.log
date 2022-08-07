@@ -1,0 +1,199 @@
+[2022-08-07 11:36:48,782: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-08-07 11:36:48,799: INFO/MainProcess] mingle: searching for neighbors
+[2022-08-07 11:36:49,822: INFO/MainProcess] mingle: all alone
+[2022-08-07 11:36:49,853: WARNING/MainProcess] C:\Users\tatva.j\Desktop\Workspace\tickets_booking_project\venv\lib\site-packages\celery\fixups\django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-08-07 11:36:49,853: INFO/MainProcess] celery@tatva-j ready.
+[2022-08-07 11:36:49,960: INFO/MainProcess] Task Movie_booking_app.tasks.deactivate_finished_shows[c873a11d-7999-404f-ba13-25be88655752] received
+[2022-08-07 11:36:49,964: INFO/MainProcess] Task Movie_booking_app.tasks.deactivate_finished_shows[a67b0315-0d13-402c-9a26-360cc3344905] received
+[2022-08-07 11:36:49,968: INFO/MainProcess] Task Movie_booking_app.tasks.deactivate_finished_shows[957dec34-0200-4f20-b378-879cee62b2ff] received
+[2022-08-07 11:36:49,971: INFO/MainProcess] Task Movie_booking_app.tasks.deactivate_finished_shows[57bb8df8-9826-4a25-8c7c-941dc502af1e] received
+[2022-08-07 11:36:49,974: INFO/MainProcess] Task Movie_booking_app.tasks.deactivate_finished_shows[cf38c910-bfaf-4ff9-9e6d-c3767fa5e02a] received
+[2022-08-07 11:36:49,978: INFO/MainProcess] Task Movie_booking_app.tasks.seat_timeout[79de0dee-e622-4d31-bce1-40b66f5f5821] received
+[2022-08-07 11:36:50,038: INFO/SpawnPoolWorker-7] child process 14532 calling self.run()
+[2022-08-07 11:36:50,071: INFO/SpawnPoolWorker-4] child process 12524 calling self.run()
+[2022-08-07 11:36:50,073: INFO/SpawnPoolWorker-2] child process 10364 calling self.run()
+[2022-08-07 11:36:50,119: INFO/SpawnPoolWorker-8] child process 14788 calling self.run()
+[2022-08-07 11:36:50,127: INFO/SpawnPoolWorker-5] child process 12932 calling self.run()
+[2022-08-07 11:36:50,128: INFO/SpawnPoolWorker-3] child process 13640 calling self.run()
+[2022-08-07 11:36:50,154: INFO/SpawnPoolWorker-6] child process 3740 calling self.run()
+[2022-08-07 11:36:50,165: INFO/SpawnPoolWorker-1] child process 6540 calling self.run()
+[2022-08-07 11:36:57,351: INFO/SpawnPoolWorker-9] child process 3224 calling self.run()
+[2022-08-07 11:36:57,361: INFO/SpawnPoolWorker-11] child process 7960 calling self.run()
+[2022-08-07 11:36:57,362: INFO/SpawnPoolWorker-10] child process 6036 calling self.run()
+[2022-08-07 11:36:57,366: INFO/SpawnPoolWorker-12] child process 15864 calling self.run()
+[2022-08-07 11:36:57,368: INFO/SpawnPoolWorker-14] child process 5244 calling self.run()
+[2022-08-07 11:36:57,385: INFO/SpawnPoolWorker-13] child process 8724 calling self.run()
+[2022-08-07 11:37:02,862: INFO/SpawnPoolWorker-16] child process 15836 calling self.run()
+[2022-08-07 11:37:02,864: INFO/SpawnPoolWorker-15] child process 15100 calling self.run()
+[2022-08-07 11:37:06,641: INFO/SpawnPoolWorker-17] child process 4328 calling self.run()
+[2022-08-07 11:43:30,275: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-08-07 11:43:30,292: INFO/MainProcess] mingle: searching for neighbors
+[2022-08-07 11:43:31,322: INFO/MainProcess] mingle: all alone
+[2022-08-07 11:43:31,351: WARNING/MainProcess] C:\Users\tatva.j\Desktop\Workspace\tickets_booking_project\venv\lib\site-packages\celery\fixups\django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-08-07 11:43:31,352: INFO/MainProcess] celery@tatva-j ready.
+[2022-08-07 11:43:31,422: INFO/SpawnPoolWorker-5] child process 4608 calling self.run()
+[2022-08-07 11:43:31,432: INFO/SpawnPoolWorker-3] child process 7244 calling self.run()
+[2022-08-07 11:43:31,472: INFO/SpawnPoolWorker-1] child process 6044 calling self.run()
+[2022-08-07 11:43:31,473: INFO/SpawnPoolWorker-2] child process 13576 calling self.run()
+[2022-08-07 11:43:31,499: INFO/SpawnPoolWorker-4] child process 13676 calling self.run()
+[2022-08-07 11:43:31,503: INFO/SpawnPoolWorker-7] child process 14444 calling self.run()
+[2022-08-07 11:43:31,504: INFO/SpawnPoolWorker-6] child process 9840 calling self.run()
+[2022-08-07 11:43:31,546: INFO/SpawnPoolWorker-8] child process 15016 calling self.run()
+[2022-08-07 11:43:39,177: INFO/SpawnPoolWorker-9] child process 504 calling self.run()
+[2022-08-07 11:43:43,507: INFO/SpawnPoolWorker-10] child process 5284 calling self.run()
+[2022-08-07 11:43:47,472: INFO/SpawnPoolWorker-11] child process 8384 calling self.run()
+[2022-08-07 11:43:51,511: INFO/SpawnPoolWorker-12] child process 10748 calling self.run()
+[2022-08-07 11:43:56,403: INFO/SpawnPoolWorker-13] child process 13436 calling self.run()
+[2022-08-07 11:44:51,231: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-08-07 11:44:51,241: INFO/MainProcess] mingle: searching for neighbors
+[2022-08-07 11:44:52,275: INFO/MainProcess] mingle: all alone
+[2022-08-07 11:44:52,309: WARNING/MainProcess] C:\Users\tatva.j\Desktop\Workspace\tickets_booking_project\venv\lib\site-packages\celery\fixups\django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-08-07 11:44:52,310: INFO/MainProcess] celery@tatva-j ready.
+[2022-08-07 11:44:52,719: INFO/SpawnPoolWorker-1] child process 11944 calling self.run()
+[2022-08-07 11:44:52,814: INFO/SpawnPoolWorker-3] child process 16176 calling self.run()
+[2022-08-07 11:44:52,875: INFO/SpawnPoolWorker-7] child process 11440 calling self.run()
+[2022-08-07 11:44:52,953: INFO/SpawnPoolWorker-6] child process 7240 calling self.run()
+[2022-08-07 11:44:52,959: INFO/SpawnPoolWorker-2] child process 9700 calling self.run()
+[2022-08-07 11:44:52,966: INFO/SpawnPoolWorker-8] child process 11224 calling self.run()
+[2022-08-07 11:44:53,046: INFO/SpawnPoolWorker-5] child process 3496 calling self.run()
+[2022-08-07 11:44:53,147: INFO/SpawnPoolWorker-4] child process 12144 calling self.run()
+[2022-08-07 11:45:00,465: INFO/SpawnPoolWorker-9] child process 14920 calling self.run()
+[2022-08-07 11:46:20,839: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-08-07 11:46:20,850: INFO/MainProcess] mingle: searching for neighbors
+[2022-08-07 11:46:21,885: INFO/MainProcess] mingle: all alone
+[2022-08-07 11:46:21,921: WARNING/MainProcess] C:\Users\tatva.j\Desktop\Workspace\tickets_booking_project\venv\lib\site-packages\celery\fixups\django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-08-07 11:46:21,922: INFO/MainProcess] celery@tatva-j ready.
+[2022-08-07 11:46:22,129: INFO/SpawnPoolWorker-7] child process 4228 calling self.run()
+[2022-08-07 11:46:22,131: INFO/SpawnPoolWorker-2] child process 3528 calling self.run()
+[2022-08-07 11:46:22,166: INFO/SpawnPoolWorker-3] child process 10068 calling self.run()
+[2022-08-07 11:46:22,169: INFO/SpawnPoolWorker-1] child process 13000 calling self.run()
+[2022-08-07 11:46:22,182: INFO/SpawnPoolWorker-8] child process 14904 calling self.run()
+[2022-08-07 11:46:22,183: INFO/SpawnPoolWorker-5] child process 16328 calling self.run()
+[2022-08-07 11:46:22,360: INFO/SpawnPoolWorker-4] child process 13608 calling self.run()
+[2022-08-07 11:46:22,373: INFO/SpawnPoolWorker-6] child process 2620 calling self.run()
+[2022-08-07 11:46:30,139: INFO/SpawnPoolWorker-9] child process 13444 calling self.run()
+[2022-08-07 11:46:30,141: INFO/SpawnPoolWorker-10] child process 3392 calling self.run()
+[2022-08-07 11:46:34,798: INFO/SpawnPoolWorker-11] child process 14584 calling self.run()
+[2022-08-07 11:46:38,820: INFO/SpawnPoolWorker-12] child process 4296 calling self.run()
+[2022-08-07 11:46:43,963: INFO/SpawnPoolWorker-13] child process 10148 calling self.run()
+[2022-08-07 11:46:48,642: INFO/SpawnPoolWorker-14] child process 15460 calling self.run()
+[2022-08-07 11:52:22,498: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-08-07 11:52:22,514: INFO/MainProcess] mingle: searching for neighbors
+[2022-08-07 11:52:23,547: INFO/MainProcess] mingle: all alone
+[2022-08-07 11:52:23,579: WARNING/MainProcess] C:\Users\tatva.j\Desktop\Workspace\tickets_booking_project\venv\lib\site-packages\celery\fixups\django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-08-07 11:52:23,579: INFO/MainProcess] celery@tatva-j ready.
+[2022-08-07 11:52:23,585: INFO/MainProcess] Task Movie_booking_app.tasks.seat_timeout[4bc23f25-5ab6-4a5f-8830-a805e059ac75] received
+[2022-08-07 11:52:23,995: INFO/SpawnPoolWorker-8] child process 4440 calling self.run()
+[2022-08-07 11:52:23,996: INFO/SpawnPoolWorker-3] child process 7480 calling self.run()
+[2022-08-07 11:52:24,041: INFO/SpawnPoolWorker-5] child process 14464 calling self.run()
+[2022-08-07 11:52:24,073: INFO/SpawnPoolWorker-1] child process 7316 calling self.run()
+[2022-08-07 11:52:24,081: INFO/SpawnPoolWorker-2] child process 1972 calling self.run()
+[2022-08-07 11:52:24,108: INFO/SpawnPoolWorker-4] child process 2404 calling self.run()
+[2022-08-07 11:52:24,185: INFO/SpawnPoolWorker-6] child process 3612 calling self.run()
+[2022-08-07 11:52:24,290: INFO/SpawnPoolWorker-7] child process 2580 calling self.run()
+[2022-08-07 11:52:32,476: INFO/SpawnPoolWorker-9] child process 15296 calling self.run()
+[2022-08-07 11:52:32,479: INFO/SpawnPoolWorker-10] child process 2356 calling self.run()
+[2022-08-07 11:52:37,492: INFO/SpawnPoolWorker-11] child process 10008 calling self.run()
+[2022-08-07 11:52:37,493: INFO/SpawnPoolWorker-12] child process 3024 calling self.run()
+[2022-08-07 11:52:42,197: INFO/SpawnPoolWorker-13] child process 16164 calling self.run()
+[2022-08-07 11:52:46,425: INFO/SpawnPoolWorker-14] child process 12928 calling self.run()
+[2022-08-07 13:09:43,190: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-08-07 13:09:43,196: INFO/MainProcess] mingle: searching for neighbors
+[2022-08-07 13:09:43,829: INFO/SpawnPoolWorker-2] child process 16324 calling self.run()
+[2022-08-07 13:09:43,829: INFO/SpawnPoolWorker-3] child process 18216 calling self.run()
+[2022-08-07 13:09:43,858: INFO/SpawnPoolWorker-7] child process 13216 calling self.run()
+[2022-08-07 13:09:43,858: INFO/SpawnPoolWorker-1] child process 17828 calling self.run()
+[2022-08-07 13:09:43,864: INFO/SpawnPoolWorker-8] child process 3568 calling self.run()
+[2022-08-07 13:09:43,872: INFO/SpawnPoolWorker-4] child process 6292 calling self.run()
+[2022-08-07 13:09:43,874: INFO/SpawnPoolWorker-5] child process 18220 calling self.run()
+[2022-08-07 13:09:43,885: INFO/SpawnPoolWorker-6] child process 3764 calling self.run()
+[2022-08-07 13:09:44,222: INFO/MainProcess] mingle: all alone
+[2022-08-07 13:09:44,247: WARNING/MainProcess] C:\Users\tatva.j\Desktop\Workspace\tickets_booking_project\venv\lib\site-packages\celery\fixups\django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-08-07 13:09:44,247: INFO/MainProcess] celery@tatva-j ready.
+[2022-08-07 13:09:44,393: INFO/MainProcess] Task Movie_booking_app.tasks.deactivate_finished_shows[442c8564-946e-4748-aa91-0ca99b4a2d72] received
+[2022-08-07 13:09:48,027: INFO/SpawnPoolWorker-12] child process 6804 calling self.run()
+[2022-08-07 13:09:48,033: INFO/SpawnPoolWorker-9] child process 4124 calling self.run()
+[2022-08-07 13:09:48,033: INFO/SpawnPoolWorker-11] child process 17528 calling self.run()
+[2022-08-07 13:09:48,033: INFO/SpawnPoolWorker-10] child process 10300 calling self.run()
+[2022-08-07 13:11:57,071: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-08-07 13:11:57,076: INFO/MainProcess] mingle: searching for neighbors
+[2022-08-07 13:11:57,871: INFO/SpawnPoolWorker-2] child process 12240 calling self.run()
+[2022-08-07 13:11:57,872: INFO/SpawnPoolWorker-4] child process 9188 calling self.run()
+[2022-08-07 13:11:57,873: INFO/SpawnPoolWorker-1] child process 17664 calling self.run()
+[2022-08-07 13:11:57,880: INFO/SpawnPoolWorker-7] child process 7196 calling self.run()
+[2022-08-07 13:11:57,890: INFO/SpawnPoolWorker-3] child process 16716 calling self.run()
+[2022-08-07 13:11:57,897: INFO/SpawnPoolWorker-5] child process 4920 calling self.run()
+[2022-08-07 13:11:57,945: INFO/SpawnPoolWorker-8] child process 11552 calling self.run()
+[2022-08-07 13:11:57,961: INFO/SpawnPoolWorker-6] child process 14236 calling self.run()
+[2022-08-07 13:11:58,096: INFO/MainProcess] mingle: all alone
+[2022-08-07 13:11:58,116: WARNING/MainProcess] C:\Users\tatva.j\Desktop\Workspace\tickets_booking_project\venv\lib\site-packages\celery\fixups\django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-08-07 13:11:58,116: INFO/MainProcess] celery@tatva-j ready.
+[2022-08-07 13:12:02,802: INFO/SpawnPoolWorker-9] child process 7892 calling self.run()
+[2022-08-07 13:12:05,819: INFO/SpawnPoolWorker-10] child process 12720 calling self.run()
+[2022-08-07 13:12:29,862: INFO/MainProcess] Task print_msg_main[74e22a6d-6082-47fe-9499-7c6e55bc09c5] received
+[2022-08-07 13:12:30,931: INFO/SpawnPoolWorker-11] child process 15656 calling self.run()
+[2022-08-07 13:12:39,859: INFO/MainProcess] Task print_msg_main[52cc2b56-26d7-4d04-84ad-f9802bb52886] received
+[2022-08-07 13:12:40,700: INFO/SpawnPoolWorker-12] child process 3924 calling self.run()
+[2022-08-07 13:12:40,703: INFO/SpawnPoolWorker-13] child process 12672 calling self.run()
+[2022-08-07 13:12:40,703: INFO/SpawnPoolWorker-14] child process 12200 calling self.run()
+[2022-08-07 13:12:40,708: INFO/SpawnPoolWorker-15] child process 10996 calling self.run()
+[2022-08-07 13:12:43,949: INFO/SpawnPoolWorker-16] child process 9636 calling self.run()
+[2022-08-07 13:12:49,851: INFO/MainProcess] Task print_msg_main[f242041d-8cb2-42f8-acde-6db3383c3e4a] received
+[2022-08-07 13:12:51,277: INFO/SpawnPoolWorker-18] child process 15200 calling self.run()
+[2022-08-07 13:12:51,284: INFO/SpawnPoolWorker-17] child process 4932 calling self.run()
+[2022-08-07 13:12:54,411: INFO/SpawnPoolWorker-20] child process 13928 calling self.run()
+[2022-08-07 13:12:54,411: INFO/SpawnPoolWorker-19] child process 7772 calling self.run()
+[2022-08-07 13:12:59,859: INFO/MainProcess] Task print_msg_main[6ea6dad0-4050-4c81-a1c0-81b636e85d6b] received
+[2022-08-07 13:13:09,858: INFO/MainProcess] Task print_msg_main[b088d7f6-16ec-4cd3-8284-8d6553e67f58] received
+[2022-08-07 13:13:19,859: INFO/MainProcess] Task print_msg_main[549489da-5228-460a-b354-22b5e796a3d6] received
+[2022-08-07 13:13:29,862: INFO/MainProcess] Task print_msg_main[5d2d05e7-40f1-4406-8356-8866fa1fb503] received
+[2022-08-07 13:13:51,780: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-08-07 13:13:51,788: INFO/MainProcess] mingle: searching for neighbors
+[2022-08-07 13:13:52,573: INFO/SpawnPoolWorker-2] child process 10812 calling self.run()
+[2022-08-07 13:13:52,575: INFO/SpawnPoolWorker-7] child process 13668 calling self.run()
+[2022-08-07 13:13:52,582: INFO/SpawnPoolWorker-5] child process 2044 calling self.run()
+[2022-08-07 13:13:52,586: INFO/SpawnPoolWorker-1] child process 896 calling self.run()
+[2022-08-07 13:13:52,591: INFO/SpawnPoolWorker-4] child process 11832 calling self.run()
+[2022-08-07 13:13:52,598: INFO/SpawnPoolWorker-6] child process 16352 calling self.run()
+[2022-08-07 13:13:52,633: INFO/SpawnPoolWorker-3] child process 8196 calling self.run()
+[2022-08-07 13:13:52,668: INFO/SpawnPoolWorker-8] child process 15764 calling self.run()
+[2022-08-07 13:13:52,815: INFO/MainProcess] mingle: all alone
+[2022-08-07 13:13:52,837: WARNING/MainProcess] C:\Users\tatva.j\Desktop\Workspace\tickets_booking_project\venv\lib\site-packages\celery\fixups\django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-08-07 13:13:52,837: INFO/MainProcess] celery@tatva-j ready.
+[2022-08-07 13:13:52,967: INFO/MainProcess] Task print_msg_main[e41b8ac3-bb66-4f98-8f92-1961f711232e] received
+[2022-08-07 13:13:52,970: INFO/MainProcess] Task print_msg_main[b4e286f3-1969-4fc1-b1b4-c162853caa5f] received
+[2022-08-07 13:13:57,514: INFO/SpawnPoolWorker-9] child process 11312 calling self.run()
+[2022-08-07 13:13:57,515: INFO/SpawnPoolWorker-11] child process 9424 calling self.run()
+[2022-08-07 13:13:57,516: INFO/SpawnPoolWorker-10] child process 14740 calling self.run()
+[2022-08-07 13:13:59,864: INFO/MainProcess] Task print_msg_main[64f601d1-a132-4a5c-8b1e-166a697b2231] received
+[2022-08-07 13:14:00,730: INFO/SpawnPoolWorker-12] child process 11352 calling self.run()
+[2022-08-07 13:14:00,737: INFO/SpawnPoolWorker-13] child process 8368 calling self.run()
+[2022-08-07 13:14:00,738: INFO/SpawnPoolWorker-14] child process 9676 calling self.run()
+[2022-08-07 13:14:09,870: INFO/MainProcess] Task print_msg_main[b11135e2-66cf-4509-a21f-91da44ada35f] received
+[2022-08-07 13:14:11,390: INFO/SpawnPoolWorker-16] child process 16532 calling self.run()
+[2022-08-07 13:14:11,393: INFO/SpawnPoolWorker-15] child process 8140 calling self.run()
+[2022-08-07 13:14:14,415: INFO/SpawnPoolWorker-17] child process 16968 calling self.run()

@@ -27,11 +27,54 @@ def seat_timeout(seats, booking_id):
     logger.debug("celery background task finished functioning for 1 min")
 
 
+# from django.core.management import call_command
+
+
+#! custome command called every 4 hours by celery worker
+@shared_task
+def deactivate_finished_shows():
+    # logger.debug("celery preodical-background task started functioning for 1 min")
+    # print("celery preodical-background task started functioning for 1 min")
+    # print("celery background task started functioning for 1 min")
+    # call_command("deactivate_finished_shows")
+    # logger.debug("celery background task finished functioning for 1 min")
+    # print("celery background task finished functioning for 1 min")
+    # return "celery background task finished functioning for 1 min"/
+    pass
+
+
+from Movie_booking_app.models.show import Show
+import datetime
+
+from django.core.management import call_command  # NEW
+
+
+@shared_task(name="print_msg_main")
+def print_message(message, *args, **kwargs):
+    # now = datetime.datetime.now()
+    # expired_shows = Show.objects.filter(date__lt=now)
+    # if expired_shows:
+    #     for show in expired_shows:
+    #         show.is_active = False
+    #         show.save()
+    #         for seat in CinemaHallSeat.objects.filter(
+    #             cinema_hall_id=show.cinema_hall_id
+    #         ):
+    #             seat.state = SeatState.objects.get(id=1)
+    #             seat.save()
+    call_command(
+        "delete_expired_shows",
+    )
+
+
+#!IMPORTANT
+#! issue:one seat should have asssociated show with it.Here,seat woulbe be booked
+#! for only one show.Therefore,every cinema hall seat should have associated show with it.
 #!1=task
 #! this task will be for running periodic task for every 3 hours to see
 #! whether the show has ended successfully and if yes then all the seats of that
 #! show occupies should be made empty.
-
+# ?1.if the show is past and still has not deleted from shows,then user should not be able to book into it.
 #! 2=task
 #! making a queue for booking process so that every booking should be made after one is made.
 #! so here we will be pushing booking request to queue.Celery task will get signal if
@@ -42,6 +85,8 @@ def seat_timeout(seats, booking_id):
 #! how views be attached with redis cache so,improve performace.But this will be much
 #! more be useful when the user searches for movie or anything like that.
 
+#!3.9=task
+#! make permissions or implement it using django available packages.
 #! 4=task
 #! home page will contain the recommendation from the ai/ml part.
 
@@ -60,7 +105,23 @@ def seat_timeout(seats, booking_id):
 #! for cancelling the seats reservation,the signal should be made to start task of
 #! emptying the seats of the users and send mail that the reservation was cancelled successfully.
 
+#!9=task
+#! Making serializer class to return only specific fields of use.
 
+#!10=task
+#! make json schema for only booking api
+
+#!11=task
+#! web scraper for fething news for specific movie and actor.
+
+#!12=task
+#! Integrating Mongodb in this project tottaly for data fetching.
+
+#!13=task
+#! Integrating elasticsearch in this project tottaly for data fetching.
+
+#!14=task
+#! How to use boto3 and give this to django task.
 # ?R&Ds:
 # 1)which to use Rabbitmq or Kafka for message queueing?
 # 2)which to use redis or memcached for caching?
@@ -68,3 +129,7 @@ def seat_timeout(seats, booking_id):
 # 4)which to use celerybeat or cron for periodic tasks?
 # 5)what fields should be included in the database for ml task of recommendation?
 # 6)How big data tools like spark or hadoop can be utilised here and in what manner?
+# 7)How to make a recommendation system using machine learning?
+# 8)Where varnish and ELK stack can be utilised here?
+# 9)Side task should be to learn hadoop or spark from the data from our
+# 10)see flower documentation for more information about new things.

@@ -22,6 +22,7 @@ class Show(models.Model):
     cinema_hall = models.ForeignKey(
         CinemaHall, on_delete=models.CASCADE, null=True  # , related_name="shows_hall"
     )
+    is_active = models.BooleanField(default=True)
     total_seats = models.IntegerField(default=50, null=True)
     available_seats = models.IntegerField(default=50, null=True)
     # price = models.IntegerField(default=0)

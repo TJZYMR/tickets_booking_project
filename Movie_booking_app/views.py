@@ -145,6 +145,8 @@ class BookViewSet(viewsets.ViewSet):
             payment_mode = PaymentMode.objects.get(id=payment_mode)
             logger.info("'Started the booking process'")
             with transaction.atomic():
+                if Show.objects.get(id=show_id).is_active is False:
+                    raise Exception("Show is not active")
                 for seat in CinemaHallSeat.objects.filter(id__in=seats):
                     if seat.state == SeatState.objects.get(id=6):
                         raise Exception("Seat is already booked")

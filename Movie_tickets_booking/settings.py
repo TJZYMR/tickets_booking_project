@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     "guardian",
     "django_filters",
     "django_celery_results",
+    "django_celery_beat",
 ]
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -214,7 +215,20 @@ CELERY_BROKER_URL = "amqp://guest:guest@localhost:5672//"
 # }
 # SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 # SESSION_CACHE_ALIAS = "default"
+CELERY_BROKER_URL = "redis://localhost:6379"
+# amqp://guest:guest@localhost:5672//
+CELERY_RESULT_BACKEND = "redis://localhost:6379"
 CELERY_TASK_RESULT_EXPIRES = 18000
 CELERY_RESULT_BACKEND = "django-db"
 CELERY_CACHE_BACKEND = "django-cache"
 CELERY_RESULT_EXTENDED = True
+CELERY_TIMEZONE = "Asia/Kolkata"
+# from celery.schedules import crontab
+
+# CELERY_BEAT_SCHEDULE = {
+#     "sample_task": {
+#         "task": "Movie_booking_app.tasks.deactivate_finished_shows",
+#         "schedule": crontab(minute="*/1"),
+#     },
+# }
+# CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
