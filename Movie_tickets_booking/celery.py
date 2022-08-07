@@ -27,13 +27,15 @@ def debug_task(self):
     print(f"Request: {self.request!r}")
 
 
+from celery.schedules import crontab
+
 app.conf.beat_schedule = {
     # Scheduler Name
     "print-message-ten-seconds": {
         # Task Name (Name Specified in Decorator)
         "task": "print_msg_main",
         # Schedule
-        "schedule": 10.0,
+        "schedule": crontab(minute="*/1"),
         # Function Arguments
         "args": ("Hello",),
     }
