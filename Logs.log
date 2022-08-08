@@ -89,3 +89,23 @@
 25 DEBUG 2022-08-08 16:29:10,135 expired_shows 12560 2365282213152 celery background task started functioning for 1 min
 39 DEBUG 2022-08-08 16:29:10,284 expired_shows 12560 2365282213152 celery background task finished functioning for 1 min
 138 INFO 2022-08-08 16:31:44,814 views 6496 14516 'Started the booking process'
+25 DEBUG 2022-08-08 16:32:04,943 expired_shows 14812 2052127022368 celery background task started functioning for 1 min
+39 DEBUG 2022-08-08 16:32:05,067 expired_shows 14812 2052127022368 celery background task finished functioning for 1 min
+138 INFO 2022-08-08 18:21:29,263 views 17224 14444 'Started the booking process'
+25 DEBUG 2022-08-08 18:21:49,385 expired_shows 10724 2915147469168 celery background task started functioning for 1 min
+39 DEBUG 2022-08-08 18:21:49,474 expired_shows 10724 2915147469168 celery background task finished functioning for 1 min
+138 INFO 2022-08-08 18:22:27,065 views 9708 9504 'Started the booking process'
+25 DEBUG 2022-08-08 18:22:47,174 expired_shows 17004 1937677312320 celery background task started functioning for 1 min
+39 DEBUG 2022-08-08 18:22:47,272 expired_shows 17004 1937677312320 celery background task finished functioning for 1 min
+138 INFO 2022-08-08 18:23:13,792 views 15900 16004 'Started the booking process'
+25 DEBUG 2022-08-08 18:23:33,863 expired_shows 16024 2329051898352 celery background task started functioning for 1 min
+39 DEBUG 2022-08-08 18:23:33,918 expired_shows 16024 2329051898352 celery background task finished functioning for 1 min
+138 INFO 2022-08-08 19:14:34,112 views 6168 2152 'Started the booking process'
+25 DEBUG 2022-08-08 19:15:22,486 expired_shows 15868 1935743674400 celery background task started functioning for 1 min
+39 DEBUG 2022-08-08 19:15:22,561 expired_shows 15868 1935743674400 celery background task finished functioning for 1 min
+138 INFO 2022-08-08 19:15:36,450 views 16480 10324 'Started the booking process'
+25 DEBUG 2022-08-08 19:15:56,500 expired_shows 15868 1935677908672 celery background task started functioning for 1 min
+39 DEBUG 2022-08-08 19:15:56,560 expired_shows 15868 1935677908672 celery background task finished functioning for 1 min
+138 INFO 2022-08-08 19:16:32,611 views 16212 8312 'Started the booking process'
+25 DEBUG 2022-08-08 19:16:52,675 expired_shows 15868 1935743293872 celery background task started functioning for 1 min
+39 DEBUG 2022-08-08 19:16:52,744 expired_shows 15868 1935743293872 celery background task finished functioning for 1 min

@@ -69,11 +69,12 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 ROOT_URLCONF = "Movie_tickets_booking.urls"
+import os
 
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -244,3 +245,22 @@ EMAIL_HOST_USER = "tatvajoshi2000@gmail.com"
 # add your password here
 EMAIL_HOST_PASSWORD = "xbjzlwoytulhvyfa"
 CELERY_IMPORTS = ["Movie_booking_app.tasks"]
+
+CELERY_TASK_ROUTES = {
+    "Movie_booking_app.tasks.email_task_async": {"queue": "normal_queue"},
+    "Movie_booking_app.tasks.seat_timeout": {"queue": "normal_queue"},
+    "Movie_booking_app.tasks.print_message": {"queue": "normal_queue"},
+    "Movie_booking_app.tasks.book": {"queue": "Book_Queue"},
+}
+# CELERY_BEAT_SCHEDULE = {
+#     "app1_test": {
+#         "task": "app1.tasks.app1_test",
+#         "schedule": 15,
+#         "options": {"queue": "queue1"},
+#     },
+#     "app2_test": {
+#         "task": "app2.tasks.app2_test",
+#         "schedule": 15,
+#         "options": {"queue": "queue2"},
+#     },
+# }

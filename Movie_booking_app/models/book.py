@@ -72,9 +72,26 @@ class Booking(mod.Model):
                         (
                             self.id,
                             self.user.email,
+                            self.payment_status.id,
+                            {
+                                "user": self.user.username,
+                                "movie": self.movie.slug,
+                                "cinema": self.cinema.name,
+                                "cinemahall": self.cinemahall.name,
+                                "show": self.show.date,
+                                "show_time": self.show.start_time,
+                                # "seats": self.seats.all(),
+                            },
                         ),
                     )
                     print("payment done and your booking is confirmed")
                     self.booking_status = BookingStatus.objects.get(id=4)
+                elif self.payment_status == PaymentStatus.objects.get(id=2):
+                    print("payment is being cancelled")
+                    app.send_task(
+                        "send_mail_to",
+                        (self.id, self.user.email, self.payment_status.id),
+                    )
+                    self.booking_status = BookingStatus.objects.get(id=3)
 
         super().save(*args, **kwargs)
