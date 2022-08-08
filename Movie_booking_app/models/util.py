@@ -7,3 +7,7 @@ class Timestamp(models.Model):
 
     class Meta:
         abstract = True
+
+def email_schedule(mail, pk):
+    print("email schedule")
+    email_task_async.delay(mail, pk)

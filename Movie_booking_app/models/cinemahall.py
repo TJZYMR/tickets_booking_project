@@ -1,5 +1,4 @@
 from tabnanny import verbose
-from zoneinfo import available_timezones
 from django_extensions.db.fields import AutoSlugField
 from django.db import models
 from Movie_booking_app.models.cinema import Cinema

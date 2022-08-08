@@ -2,6 +2,7 @@ from django.db import models
 from Movie_booking_app.models.cinema import SeatType
 
 from Movie_booking_app.models.cinemahall import CinemaHall
+from Movie_booking_app.models.show import Show
 from Movie_booking_app.models.statuses import BookingStatus, SeatState
 from django_extensions.db.fields import AutoSlugField
 
@@ -16,6 +17,7 @@ class CinemaHallSeat(models.Model):
     seat_number = models.IntegerField()
     price = models.IntegerField(default=150, null=True)
     state = models.ForeignKey(SeatState, on_delete=models.CASCADE, null=True, default=1)
+    show = models.ForeignKey(Show, on_delete=models.CASCADE, null=True, default=1)
     slug = AutoSlugField(
         populate_from=["cinema_hall__slug"], unique=True, editable=True, default=""
     )

@@ -1,19 +1,20 @@
 # import datetime
 # from io import open_code
 # from tkinter import E
-from calendar import c
 from django.db import models as mod
-from django.dispatch import Signal, receiver
 from Movie_booking_app.models.cinemahall import CinemaHall
 from Movie_booking_app.models.cinemahallseat import CinemaHallSeat
 
 from Movie_booking_app.models.movie import Movie
 from Movie_booking_app.models.payments import PaymentMode
-from Movie_booking_app.models.statuses import BookingStatus, PaymentStatus, SeatState
+from Movie_booking_app.models.statuses import BookingStatus, PaymentStatus
 from Movie_booking_app.models.users import User
 from Movie_booking_app.models.show import Show
 from Movie_booking_app.models.cinema import Cinema
 from django_extensions.db.fields import AutoSlugField
+
+from Movie_tickets_booking.settings import EMAIL_HOST_USER
+from Movie_tickets_booking.celery import app
 
 # 1.a booking can have many users.=>done
 # 2.a booking can have one user.=>done
@@ -29,10 +30,10 @@ class Booking(mod.Model):
     cinemahall = mod.ForeignKey(CinemaHall, on_delete=mod.CASCADE, null=True)
     show = mod.ForeignKey(Show, on_delete=mod.CASCADE, null=True)
     payment_status = mod.ForeignKey(
-        PaymentStatus, on_delete=mod.CASCADE, null=True, default=2
+        PaymentStatus, on_delete=mod.CASCADE, null=True, default=3
     )
     booking_status = mod.ForeignKey(
-        BookingStatus, on_delete=mod.CASCADE, null=True, default=1
+        BookingStatus, on_delete=mod.CASCADE, null=True, default=2
     )
     booking_date_time = mod.DateTimeField(auto_now_add=True, blank=True, null=True)
     seats = mod.ManyToManyField(CinemaHallSeat, blank=True)
@@ -59,17 +60,21 @@ class Booking(mod.Model):
     def __str__(self):
         return self.slug
 
-    def trigger_your_alert():
-        pass
-
     #! this signal is for detecting changes and sending the signal with the actions that we want to do.
     def save(self, *args, **kwargs):
         if self.pk is not None:
             old_instance = Booking.objects.get(pk=self.pk)
             if old_instance.payment_status != self.payment_status:
-                if self.payment_status == PaymentStatus.objects.get(id=5):
-                    # self.trigger_your_alert()
+                if self.payment_status == PaymentStatus.objects.get(id=1):
+                    #!we are not directly calling by delay but just sending task in the queue to be executed.
+                    app.send_task(
+                        "send_mail_to",
+                        (
+                            self.id,
+                            self.user.email,
+                        ),
+                    )
                     print("payment done and your booking is confirmed")
-                    self.booking_status = BookingStatus.objects.get(id=3)
+                    self.booking_status = BookingStatus.objects.get(id=4)
 
         super().save(*args, **kwargs)

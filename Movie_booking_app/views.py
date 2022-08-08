@@ -1,9 +1,6 @@
 from datetime import date
-import email
-import re
 from rest_framework.response import Response
 from rest_framework import viewsets
-from Movie_booking_app import serializers
 from Movie_booking_app.models import (
     Booking,  #
     SeatType,  #
@@ -45,12 +42,12 @@ from Movie_booking_app.serializers import (
     UserProfileSerializer,
     ShowMovieSerializer,
 )
-from rest_framework import generics
 from django_filters import rest_framework as filters
 from rest_framework import status
 import logging
 
 from Movie_booking_app.tasks import seat_timeout
+
 
 logger = logging.getLogger(__name__)
 # class BookingViewSet(viewsets.ModelViewSet):
@@ -63,11 +60,6 @@ logger = logging.getLogger(__name__)
 #     serializer_class = SeatTypeSerializer
 
 from django.db.models import Prefetch
-
-# from django.db.models import Prefetch
-
-from django.views.decorators.cache import cache_page
-from django.views.decorators.vary import vary_on_cookie
 
 
 class ShowViewSet(viewsets.ModelViewSet):
@@ -148,10 +140,10 @@ class BookViewSet(viewsets.ViewSet):
                 if Show.objects.get(id=show_id).is_active is False:
                     raise Exception("Show is not active")
                 for seat in CinemaHallSeat.objects.filter(id__in=seats):
-                    if seat.state == SeatState.objects.get(id=6):
+                    if seat.state == SeatState.objects.get(id=2):
                         raise Exception("Seat is already booked")
                     else:
-                        seat.state = SeatState.objects.get(id=6)
+                        seat.state = SeatState.objects.get(id=2)
                         seat.save()
                 queryset = Booking.objects.create(
                     user_id=user_id,
@@ -162,7 +154,7 @@ class BookViewSet(viewsets.ViewSet):
                     total_amount=total_amount,
                     payment_mode=payment_mode,
                 )
-                seat_timeout.apply_async((seats, queryset.id), countdown=25)
+                seat_timeout.apply_async((seats, queryset.id), countdown=20)
                 # ! setting the seats many to many field here,like this,it is set like this in this relationship.
                 queryset.seats.set(seats)
                 serializer = BookingSerializer(queryset)

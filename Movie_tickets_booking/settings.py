@@ -232,3 +232,15 @@ CELERY_TIMEZONE = "Asia/Kolkata"
 #     },
 # }
 # CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+# add your host of the email here in this case its Gmail so we are going to use Gmail host
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_USE_TLS = True
+# add the port number of the email server
+EMAIL_PORT = 587
+# add your gamil here
+EMAIL_HOST_USER = "tatvajoshi2000@gmail.com"
+# add your password here
+EMAIL_HOST_PASSWORD = "xbjzlwoytulhvyfa"
+CELERY_IMPORTS = ["Movie_booking_app.tasks"]
