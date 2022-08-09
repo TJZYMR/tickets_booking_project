@@ -25,7 +25,7 @@ def email_task_async(booking_id, user_email, payment_status, ticket_info):
         )
         message = "Cancelled"
         send_mail_to(subject, message, user_email)
-    elif payment_status == PaymentStatus.objects.get(id=1).id:
+    elif payment_status == PaymentStatus.objects.get(id=3).id:
         context = {
             "user": ticket_info["user"],
             "movie": ticket_info["movie"],

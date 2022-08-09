@@ -109,3 +109,99 @@
 138 INFO 2022-08-08 19:16:32,611 views 16212 8312 'Started the booking process'
 25 DEBUG 2022-08-08 19:16:52,675 expired_shows 15868 1935743293872 celery background task started functioning for 1 min
 39 DEBUG 2022-08-08 19:16:52,744 expired_shows 15868 1935743293872 celery background task finished functioning for 1 min
+138 INFO 2022-08-08 19:19:17,969 views 17292 6732 'Started the booking process'
+25 DEBUG 2022-08-08 19:19:38,032 expired_shows 14540 1419942435424 celery background task started functioning for 1 min
+39 DEBUG 2022-08-08 19:19:38,095 expired_shows 14540 1419942435424 celery background task finished functioning for 1 min
+138 INFO 2022-08-09 10:09:16,036 views 10568 9740 'Started the booking process'
+163 ERROR 2022-08-09 10:09:16,073 views 10568 9740 'Seat is already booked'
+138 INFO 2022-08-09 10:10:53,038 views 10568 9740 'Started the booking process'
+25 DEBUG 2022-08-09 10:11:13,165 expired_shows 3948 2479002597184 celery background task started functioning for 1 min
+39 DEBUG 2022-08-09 10:11:13,435 expired_shows 3948 2479002597184 celery background task finished functioning for 1 min
+138 INFO 2022-08-09 10:19:25,318 views 10568 9740 'Started the booking process'
+163 ERROR 2022-08-09 10:19:25,351 views 10568 9740 'Seat is already booked'
+164 ERROR 2022-08-09 11:18:35,654 views 1688 7900 'PaymentMode matching query does not exist.'
+138 INFO 2022-08-09 11:19:20,097 views 1688 7900 'Started the booking process'
+25 DEBUG 2022-08-09 11:19:40,338 expired_shows 4320 2436635451184 celery background task started functioning for 1 min
+39 DEBUG 2022-08-09 11:19:40,463 expired_shows 4320 2436635451184 celery background task finished functioning for 1 min
+138 INFO 2022-08-09 11:21:05,167 views 12196 1424 'Started the booking process'
+25 DEBUG 2022-08-09 11:21:25,311 expired_shows 4320 2436635669808 celery background task started functioning for 1 min
+39 DEBUG 2022-08-09 11:21:25,509 expired_shows 4320 2436635669808 celery background task finished functioning for 1 min
+138 INFO 2022-08-09 11:22:37,749 views 9108 16300 'Started the booking process'
+25 DEBUG 2022-08-09 11:22:57,889 expired_shows 4320 2436636736880 celery background task started functioning for 1 min
+39 DEBUG 2022-08-09 11:22:58,014 expired_shows 4320 2436636736880 celery background task finished functioning for 1 min
+138 INFO 2022-08-09 11:24:20,997 views 12884 4576 'Started the booking process'
+25 DEBUG 2022-08-09 11:24:41,135 expired_shows 4320 2436635875584 celery background task started functioning for 1 min
+39 DEBUG 2022-08-09 11:24:41,251 expired_shows 4320 2436635875584 celery background task finished functioning for 1 min
+138 INFO 2022-08-09 11:25:30,955 views 5468 7260 'Started the booking process'
+25 DEBUG 2022-08-09 11:25:51,084 expired_shows 4320 2436530248112 celery background task started functioning for 1 min
+39 DEBUG 2022-08-09 11:25:51,244 expired_shows 4320 2436530248112 celery background task finished functioning for 1 min
+175 ERROR 2022-08-09 12:39:50,786 views 16652 4864 'PaymentMode matching query does not exist.'
+139 INFO 2022-08-09 12:40:00,952 views 16652 4864 'Started the booking process'
+175 ERROR 2022-08-09 12:40:00,964 views 16652 4864 ''QuerySet' object has no attribute 'morning''
+139 INFO 2022-08-09 12:41:17,849 views 16652 4864 'Started the booking process'
+175 ERROR 2022-08-09 12:41:17,855 views 16652 4864 ''QuerySet' object has no attribute 'morning''
+139 INFO 2022-08-09 12:42:00,090 views 8804 6740 'Started the booking process'
+139 INFO 2022-08-09 12:45:21,919 views 15932 1724 'Started the booking process'
+175 ERROR 2022-08-09 12:45:33,431 views 15932 1724 'Seat is not available for morning show'
+139 INFO 2022-08-09 12:53:15,167 views 15932 1724 'Started the booking process'
+175 ERROR 2022-08-09 12:53:20,786 views 15932 1724 'Seat is not available for morning show'
+139 INFO 2022-08-09 12:54:02,864 views 14320 16616 'Started the booking process'
+175 ERROR 2022-08-09 12:54:04,525 views 14320 16616 'Seat is not available for morning show'
+139 INFO 2022-08-09 12:54:57,438 views 14320 16616 'Started the booking process'
+175 ERROR 2022-08-09 13:01:27,612 views 14320 16616 'Seat is not available for morning show'
+139 INFO 2022-08-09 15:01:21,725 views 15312 12340 'Started the booking process'
+139 INFO 2022-08-09 15:03:17,108 views 10712 3944 'Started the booking process'
+25 DEBUG 2022-08-09 15:05:01,576 expired_shows 15688 2491764181120 celery background task started functioning for 1 min
+25 DEBUG 2022-08-09 15:05:01,585 expired_shows 15688 2491764383712 celery background task started functioning for 1 min
+39 DEBUG 2022-08-09 15:05:01,680 expired_shows 15688 2491764383712 celery background task finished functioning for 1 min
+139 INFO 2022-08-09 15:11:20,921 views 10712 3944 'Started the booking process'
+25 DEBUG 2022-08-09 15:11:40,939 expired_shows 15688 2491729378672 celery background task started functioning for 1 min
+39 DEBUG 2022-08-09 15:11:41,020 expired_shows 15688 2491729378672 celery background task finished functioning for 1 min
+139 INFO 2022-08-09 15:14:05,187 views 8396 10520 'Started the booking process'
+139 INFO 2022-08-09 15:14:14,874 views 8396 10520 'Started the booking process'
+25 DEBUG 2022-08-09 15:14:29,720 expired_shows 13396 1594621887760 celery background task started functioning for 1 min
+41 DEBUG 2022-08-09 15:14:29,797 expired_shows 13396 1594621887760 celery background task finished functioning for 1 min
+25 DEBUG 2022-08-09 15:14:34,907 expired_shows 13396 1594621152064 celery background task started functioning for 1 min
+41 DEBUG 2022-08-09 15:14:34,975 expired_shows 13396 1594621152064 celery background task finished functioning for 1 min
+139 INFO 2022-08-09 15:14:50,789 views 8396 10520 'Started the booking process'
+25 DEBUG 2022-08-09 15:15:10,800 expired_shows 13396 1594521044768 celery background task started functioning for 1 min
+41 DEBUG 2022-08-09 15:15:10,866 expired_shows 13396 1594521044768 celery background task finished functioning for 1 min
+139 INFO 2022-08-09 15:16:14,395 views 8396 10520 'Started the booking process'
+25 DEBUG 2022-08-09 15:16:34,414 expired_shows 13396 1594621888816 celery background task started functioning for 1 min
+41 DEBUG 2022-08-09 15:16:34,471 expired_shows 13396 1594621888816 celery background task finished functioning for 1 min
+139 INFO 2022-08-09 15:17:35,583 views 8396 10520 'Started the booking process'
+25 DEBUG 2022-08-09 15:17:55,610 expired_shows 13396 1594621614336 celery background task started functioning for 1 min
+41 DEBUG 2022-08-09 15:17:55,686 expired_shows 13396 1594621614336 celery background task finished functioning for 1 min
+139 INFO 2022-08-09 15:18:50,859 views 8396 10520 'Started the booking process'
+25 DEBUG 2022-08-09 15:19:10,889 expired_shows 13396 1594551097600 celery background task started functioning for 1 min
+41 DEBUG 2022-08-09 15:19:10,955 expired_shows 13396 1594551097600 celery background task finished functioning for 1 min
+139 INFO 2022-08-09 15:25:30,167 views 8396 10520 'Started the booking process'
+139 INFO 2022-08-09 15:25:32,915 views 8396 10520 'Started the booking process'
+139 INFO 2022-08-09 15:25:35,289 views 8396 10520 'Started the booking process'
+25 DEBUG 2022-08-09 15:25:50,198 expired_shows 13396 1594587102576 celery background task started functioning for 1 min
+41 DEBUG 2022-08-09 15:25:50,257 expired_shows 13396 1594587102576 celery background task finished functioning for 1 min
+25 DEBUG 2022-08-09 15:25:52,936 expired_shows 13396 1594620982576 celery background task started functioning for 1 min
+41 DEBUG 2022-08-09 15:25:53,009 expired_shows 13396 1594620982576 celery background task finished functioning for 1 min
+25 DEBUG 2022-08-09 15:25:55,316 expired_shows 13396 1594521044768 celery background task started functioning for 1 min
+41 DEBUG 2022-08-09 15:25:55,487 expired_shows 13396 1594521044768 celery background task finished functioning for 1 min
+139 INFO 2022-08-09 15:28:15,683 views 9260 9808 'Started the booking process'
+25 DEBUG 2022-08-09 15:29:22,295 expired_shows 13396 1594488703104 celery background task started functioning for 1 min
+41 DEBUG 2022-08-09 15:29:22,351 expired_shows 13396 1594488703104 celery background task finished functioning for 1 min
+139 INFO 2022-08-09 15:30:04,482 views 14612 3028 'Started the booking process'
+25 DEBUG 2022-08-09 15:30:24,540 expired_shows 13396 1594587102576 celery background task started functioning for 1 min
+41 DEBUG 2022-08-09 15:30:24,613 expired_shows 13396 1594587102576 celery background task finished functioning for 1 min
+139 INFO 2022-08-09 15:34:43,468 views 9740 17012 'Started the booking process'
+25 DEBUG 2022-08-09 15:35:03,512 expired_shows 13396 1594621161040 celery background task started functioning for 1 min
+41 DEBUG 2022-08-09 15:35:03,574 expired_shows 13396 1594621161040 celery background task finished functioning for 1 min
+139 INFO 2022-08-09 15:36:50,706 views 16752 12756 'Started the booking process'
+25 DEBUG 2022-08-09 15:37:10,762 expired_shows 13396 1594621890400 celery background task started functioning for 1 min
+41 DEBUG 2022-08-09 15:37:10,809 expired_shows 13396 1594621890400 celery background task finished functioning for 1 min
+139 INFO 2022-08-09 15:37:14,227 views 16752 12756 'Started the booking process'
+25 DEBUG 2022-08-09 15:37:34,249 expired_shows 13396 1594622096336 celery background task started functioning for 1 min
+41 DEBUG 2022-08-09 15:37:34,332 expired_shows 13396 1594622096336 celery background task finished functioning for 1 min
+139 INFO 2022-08-09 15:37:59,568 views 4364 544 'Started the booking process'
+25 DEBUG 2022-08-09 15:39:14,609 expired_shows 13396 1594623081136 celery background task started functioning for 1 min
+139 INFO 2022-08-09 15:39:37,317 views 4364 544 'Started the booking process'
+25 DEBUG 2022-08-09 15:41:19,049 expired_shows 13396 1594622090880 celery background task started functioning for 1 min
+139 INFO 2022-08-09 15:41:25,430 views 1724 5580 'Started the booking process'
+167 ERROR 2022-08-09 15:41:27,103 views 1724 5580 'Seat is already booked'

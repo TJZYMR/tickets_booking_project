@@ -3,11 +3,11 @@
 # from tkinter import E
 from django.db import models as mod
 from Movie_booking_app.models.cinemahall import CinemaHall
-from Movie_booking_app.models.cinemahallseat import CinemaHallSeat
+from Movie_booking_app.models.cinemahallseat import CinemaHallSeat, ShowWiseSeats
 
 from Movie_booking_app.models.movie import Movie
 from Movie_booking_app.models.payments import PaymentMode
-from Movie_booking_app.models.statuses import BookingStatus, PaymentStatus
+from Movie_booking_app.models.statuses import BookingStatus, PaymentStatus, SeatState
 from Movie_booking_app.models.users import User
 from Movie_booking_app.models.show import Show
 from Movie_booking_app.models.cinema import Cinema
@@ -30,10 +30,10 @@ class Booking(mod.Model):
     cinemahall = mod.ForeignKey(CinemaHall, on_delete=mod.CASCADE, null=True)
     show = mod.ForeignKey(Show, on_delete=mod.CASCADE, null=True)
     payment_status = mod.ForeignKey(
-        PaymentStatus, on_delete=mod.CASCADE, null=True, default=3
+        PaymentStatus, on_delete=mod.CASCADE, null=True, default=1
     )
     booking_status = mod.ForeignKey(
-        BookingStatus, on_delete=mod.CASCADE, null=True, default=2
+        BookingStatus, on_delete=mod.CASCADE, null=True, default=1
     )
     booking_date_time = mod.DateTimeField(auto_now_add=True, blank=True, null=True)
     seats = mod.ManyToManyField(CinemaHallSeat, blank=True)
@@ -65,7 +65,7 @@ class Booking(mod.Model):
         if self.pk is not None:
             old_instance = Booking.objects.get(pk=self.pk)
             if old_instance.payment_status != self.payment_status:
-                if self.payment_status == PaymentStatus.objects.get(id=1):
+                if self.payment_status == PaymentStatus.objects.get(id=3):
                     #!we are not directly calling by delay but just sending task in the queue to be executed.
                     app.send_task(
                         "send_mail_to",
@@ -85,7 +85,13 @@ class Booking(mod.Model):
                         ),
                     )
                     print("payment done and your booking is confirmed")
-                    self.booking_status = BookingStatus.objects.get(id=4)
+                    self.booking_status = BookingStatus.objects.get(id=3)
+                    for seat in ShowWiseSeats.objects.filter(
+                        cinema_hall_seat_id__in=self.seats.all(), show_id=self.show_id
+                    ):
+                        seat.state_id = SeatState.objects.get(id=1)
+                        seat.save()
+
                 elif self.payment_status == PaymentStatus.objects.get(id=2):
                     print("payment is being cancelled")
                     app.send_task(
@@ -93,5 +99,9 @@ class Booking(mod.Model):
                         (self.id, self.user.email, self.payment_status.id),
                     )
                     self.booking_status = BookingStatus.objects.get(id=3)
-
+                    for seat in ShowWiseSeats.objects.filter(
+                        cinema_hall_seat_id__in=self.seats.all(), show_id=self.show_id
+                    ):
+                        seat.state_id = SeatState.objects.get(id=3)
+                        seat.save()
         super().save(*args, **kwargs)

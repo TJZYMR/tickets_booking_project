@@ -1,8 +1,6 @@
 # from django.core.management import call_command
 
 
-
-
 #!----------------------------------------------------------------
 #!IMPORTANT
 #! issue:one seat should have asssociated show with it.Here,seat woulbe be booked
@@ -66,6 +64,11 @@
 #!14=task
 #! How to use boto3 and give this to django task.
 #!----------------------------------------------------------------
+# ?partially done
+#!15=task
+#! Django-import-export and how to use it to send csv data that ml engineers need
+
+#! how to check housful lcondition?
 # ?R&Ds:
 # 1)which to use Rabbitmq or Kafka for message queueing?
 # 2)which to use redis or memcached for caching?

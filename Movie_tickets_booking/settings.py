@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     "django_filters",
     "django_celery_results",
     "django_celery_beat",
+    "import_export",
 ]
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -88,7 +89,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "Movie_tickets_booking.wsgi.application"
-
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases

@@ -7,3 +7,7 @@ Final commands:=>(sequential is mendatory)
 1)python manage.py runserver
 2)celery -A Movie_tickets_booking worker --loglevel=info -P eventlet
 3)celery -A Movie_tickets_booking beat -l info
+
+
+#Flower Runnig command:=>
+celery -A Movie_tickets_booking flower --loglevel=info

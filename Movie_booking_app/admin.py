@@ -1,5 +1,4 @@
 from django.contrib import admin
-
 from Movie_booking_app.models.payments import Coupen
 from .models import (
     Booking,
@@ -19,12 +18,13 @@ from .models import (
     Notification,
     NotificationType,
     SeatState,
+    ShowWiseSeats,
 )
+from import_export.admin import ImportExportModelAdmin
 
 # Register your models here.
 admin.site.register(
     [
-        Booking,
         SeatState,
         SeatType,
         Cinema,
@@ -41,5 +41,11 @@ admin.site.register(
         Coupen,
         Notification,
         NotificationType,
+        ShowWiseSeats,
     ]
 )
+
+
+@admin.register(Booking)
+class BookingAdmin(ImportExportModelAdmin):
+    pass

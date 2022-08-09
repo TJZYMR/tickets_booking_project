@@ -1,5 +1,4 @@
 # from this import s
-from zoneinfo import available_timezones
 from django_extensions.db.fields import AutoSlugField
 from django.db import models
 from Movie_booking_app.models.cinema import Cinema
@@ -12,6 +11,8 @@ from Movie_booking_app.models.movie import Movie
 # 1.a movie can have multiple shows=>done
 # 2.a cinemahall can have one movie at a time.=>done
 # 3.one cinema can have manyshows.=>done
+
+
 class Show(models.Model):
     created_on = models.DateField(auto_now_add=True)
     date = models.DateField(null=True)
@@ -26,7 +27,10 @@ class Show(models.Model):
     total_seats = models.IntegerField(default=50, null=True)
     available_seats = models.IntegerField(default=50, null=True)
     # price = models.IntegerField(default=0)
-    # cinemahallseat = models.ForeignKey(CinemaHall, on_delete=models.CASCADE, null=True)
+    # cinemahallseat = models.ForeignKey(
+    #     CinemaHallSeat, on_delete=models.CASCADE, null=True
+    # )
+    # timing = models.CharField(max_length=50, null=True)
     slug = AutoSlugField(
         populate_from=["movie__slug"], unique=True, editable=True, default=""
     )
@@ -66,3 +70,8 @@ class Show(models.Model):
                 name="unique show",
             )
         ]
+
+
+# class SeatShow(models.Model):
+#     seat_no = models.ForeignKey(CinemaHallSeat, on_delete=models.CASCADE, null=True)
+#     show = models.OneToOneField(Show, verbose_name=("ID"), primary_key=True)
